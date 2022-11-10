@@ -5,6 +5,9 @@ function CalculateCost() {
 	let numPeople = document.getElementById("people").value;
 	let packageType = document.getElementById("packageType").value;
 
+	document.getElementById("customername").value = "";
+	document.getElementById("people").value = "";
+
 	let discount = 0;
 
 	if (name == "") {
@@ -28,23 +31,27 @@ function CalculateCost() {
 
 		let discountedCost = total - discount;
 
-		document.getElementById("details").innerHTML = name + "<br><br>";
+		document.getElementById("modalName").innerHTML = `${name}`;
 
-		document.getElementById("details").innerHTML +=
-			packageType + " package booked<br><br>";
+		document.getElementById(
+			"modalpackageType"
+		).innerHTML = `${packageType} package booked`;
 
-		document.getElementById("details").innerHTML +=
-			numPeople + " package @ £" + rate + " per night" + "<br><br>";
+		document.getElementById(
+			"modalNumPeople"
+		).innerHTML = `$numPeople} package £" ${rate}  per night`;
 
-		document.getElementById("details").innerHTML +=
-			"Cost of stay £" + total + " - £" + discount + " discount!" + "<br><br>";
+		document.getElementById(
+			"modalDiscount"
+		).innerHTML = `Cost of stay £${total} - £${discount} discount!`;
 
-		document.getElementById("details").innerHTML +=
-			"Total cost is now £" + discountedCost;
+		document.getElementById(
+			"modalTotalCost"
+		).innerHTML = `Total cost is now £${discountedCost}`;
+
+		// document.getElementById("details").style.display = "block";
 	}
-	document.getElementById("details").style.display = "block";
 }
-
 function packageChanged() {
 	let packagePicture = document.getElementById("packageType").value;
 
