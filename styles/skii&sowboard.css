@@ -64,7 +64,8 @@
 	margin-bottom: 100px;
 }
 .table-packages {
-	border: 1px solid black;
+	display: flex;
+	justify-content: center;
 }
 tr {
 	border: 1px solid black;
@@ -84,6 +85,8 @@ tr {
 }
 .discount-description {
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
 }
 .red {
 	color: rgb(206, 28, 28);
