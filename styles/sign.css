@@ -1,0 +1,78 @@
+html,
+body {
+	background-image: url(../media/sign.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	align-content: center;
+}
+/* Card start */
+.card {
+	height: 370px;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 400px;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card-header h3 {
+	color: white;
+}
+.go-home {
+	color: #ffffff;
+}
+.go-home:hover {
+	color: #d2a426;
+	text-decoration: none;
+}
+/* form */
+.input-group-prepend span {
+	width: 50px;
+	background-color: #d2a426;
+	color: black;
+	border: 0 !important;
+}
+
+/* Btn */
+.login_btn {
+	color: black;
+	background-color: #d2a426;
+	width: 100px;
+}
+
+.login_btn:hover {
+	color: black;
+	background-color: white;
+}
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+	.card {
+		height: 390px;
+		width: 500px;
+	}
+	/* Btn */
+	.login_btn {
+		color: #ffffff;
+		width: 100%;
+	}
+}
+/* !Media Quey tablet finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.card {
+		height: 470px;
+		width: 500px;
+	}
+	/* Btn */
+	.login_btn {
+		color: #ffffff;
+		width: 100%;
+	}
+}
+/* !Media Quey phone finish */

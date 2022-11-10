@@ -9,7 +9,8 @@
 		<meta name="description" content="Main Page for Winter Adventures Agency" />
 
 		<title>Winter Adventures Home Page</title>
-		<!-- Sources -->
+
+		<!-- fontawesome -->
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -17,16 +18,37 @@
 			crossorigin="anonymous"
 		/>
 
-		<!-- Links Bs css -->
+		<!-- Boostrap css -->
 		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+			crossorigin="anonymous"
+		/>
+		<!-- Boostrap Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<!-- Sources -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+			integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+			crossorigin="anonymous"
+		/> -->
+
+		<!-- Links Bs css -->
+		<!-- <link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
-		/>
+		/> -->
 
 		<!-- External styles -->
 		<link href="./styles/index.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../styles/general.css" />
 	</head>
 
 	<body>
@@ -68,6 +90,19 @@
 								>Packages</a
 							>
 						</li>
+						<li class="nav-item nav-item-userName">
+							<span id="userNameNav"></span>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#"
+								class="icon-account"
+								data-toggle="modal"
+								data-target="#accountModal"
+							>
+								<i class="bi bi-person nav-icon"></i>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -95,201 +130,262 @@
 				</div>
 			</section>
 		</header>
-
-		<!-- Section: Accommodation/3cards  -->
-		<section id="accommodation">
-			<div class="fakeNavbar-Accommodation"></div>
-			<div class="card-group d-flex justify-content-center g-5">
-				<div class="row">
-					<!-- card 1 -->
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="card">
-							<img
-								src="./media/chalet1.jpg"
-								class="card-img-top"
-								alt="chalet 1"
-							/>
-							<div class="card-body">
-								<h4 class="card-title">Tignes</h4>
-								<h6 class="card-Sub-heading">France</h6>
-								<p class="card-text">
-									A very well furnished chalet. The Kalinda is great for those
-									who are after a range of facilities but don’t wish to travel
-									far. Spa's, gyms, restaurants and a ski shop are right on your
-									doorstep.
-								</p>
-								<a class="btn bg-info" href="./pages/Tignes.html" role="button"
-									>More details</a
-								>
-							</div>
+		<main>
+			<!-- Modal -->
+			<div
+				class="modal fade"
+				id="accountModal"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="accountModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="accountModalLabel">
+								Winter Adventures Account
+							</h5>
+							<button
+								type="button"
+								class="close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
-					</div>
-
-					<!-- card 2 -->
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="card">
-							<img
-								src="./media/chalet2.jpg"
-								class="card-img-top"
-								alt="chalet 2"
-							/>
-							<div class="card-body">
-								<h4 class="card-title">Morzine</h4>
-								<h6 class="card-Sub-heading">France</h6>
-								<p class="card-text">
-									Situated in St Jean d’Aulps in the "Portes du Soleil" on the
-									Grande Route des Alpes and 30 minutes south of Lake Geneva- a
-									perfect spot for holidays all year round. A 10 minute walk
-									from the centre of the village.
-								</p>
-								<a class="btn bg-info" href="./pages/Morzine.html" role="button"
-									>More details</a
-								>
-							</div>
-						</div>
-					</div>
-
-					<!-- card 3 -->
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="card">
-							<img
-								src="./media/chalet3.jpg"
-								class="card-img-top"
-								alt="chalet 3"
-							/>
-							<div class="card-body">
-								<h4 class="card-title">La Tania</h4>
-								<h6 class="card-Sub-heading">France</h6>
-								<p class="card-text">
-									Chalet 715 is our premier luxury chalet catering for 15
-									guests. We've created a unique, warm, welcoming, home away
-									from home for all the old and new. 30 minutes from Lake Geneva
-									- a perfect spot for holidays all year round.
-								</p>
-								<a class="btn bg-info" href="./pages/Tania.html" role="button"
-									>More details</a
-								>
-							</div>
+						<div class="modal-body">Logo</div>
+						<div class="modal-footer">
+							<button
+								id="goToSignIn"
+								type="button"
+								class="btn btn-sign-in-modal"
+								data-toggle="modal"
+								data-target="#accountModal"
+							>
+								Sign in
+							</button>
+							<button
+								id="goToSignUp"
+								type="button"
+								class="btn btn-sign-up-modal"
+								data-toggle="modal"
+								data-target="#accountModal"
+							>
+								Sing up
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+			<!-- Modal finish -->
 
-		<!-- Section: Services/Text and picture  -->
-		<div class="bg-info mt-5">
-			<section id="services">
-				<div class="fakeNavbar"></div>
-				<div class="container">
+			<!-- Section: Accommodation/3cards  -->
+			<section id="accommodation">
+				<div class="fakeNavbar-Accommodation"></div>
+				<div class="card-group d-flex justify-content-center g-5">
 					<div class="row">
-						<div class="col col-sm-12 col-md-12 col-lg-6">
-							<div class="row">
-								<h3 class="py-5">Services</h3>
-								<p class="p-4">
-									Anyone who has travelled with us will know that it is the
-									experience,quality and dedication of our ski resort teams and
-									our in-resort ski services that really sets us apart from
-									anything else you are likely to experience. We aim to
-									continually exceed clients expectations and ensure every time
-									a client skis with us, it is their best ski holiday so far.
-								</p>
-								<div class="row myCheckboxInfo">
-									<div class="col-2 d-flex justify-content-end pt-2">
-										<i class="fas fa-check-square mx-2 bg-info text-light"></i>
-									</div>
-									<div class="col-10">
-										<p>
-											Our childcare teams deliver a unique service, ensuring
-											that every child gets the attention & support they need.
-										</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-2 d-flex justify-content-end pt-2">
-										<i class="fas fa-check-square mx-2 bg-info text-light"></i>
-									</div>
-									<div class="col-10">
-										<p>
-											Our comprehensive range of ski programmes ensure that all
-											our clients enjoy their time in the mountains.
-										</p>
-									</div>
+						<!-- card 1 -->
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="./media/chalet1.jpg"
+									class="card-img-top"
+									alt="chalet 1"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Tignes</h4>
+									<h6 class="card-Sub-heading">France</h6>
+									<p class="card-text">
+										A very well furnished chalet. The Kalinda is great for those
+										who are after a range of facilities but don’t wish to travel
+										far. Spa's, gyms, restaurants and a ski shop are right on
+										your doorstep.
+									</p>
+									<a
+										class="btn bg-info"
+										href="./pages/Tignes.html"
+										role="button"
+										>More details</a
+									>
 								</div>
 							</div>
 						</div>
-						<div class="ovalEffect col-sm-12 col-md-12 col-lg-6 p-0">
-							<img
-								class="circle-image"
-								src="./media/ski-services.jpg"
-								alt="ski services"
-							/>
+
+						<!-- card 2 -->
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="./media/chalet2.jpg"
+									class="card-img-top"
+									alt="chalet 2"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Morzine</h4>
+									<h6 class="card-Sub-heading">France</h6>
+									<p class="card-text">
+										Situated in St Jean d’Aulps in the "Portes du Soleil" on the
+										Grande Route des Alpes and 30 minutes south of Lake Geneva-
+										a perfect spot for holidays all year round. A 10 minute walk
+										from the centre of the village.
+									</p>
+									<a
+										class="btn bg-info"
+										href="./pages/Morzine.html"
+										role="button"
+										>More details</a
+									>
+								</div>
+							</div>
+						</div>
+
+						<!-- card 3 -->
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="./media/chalet3.jpg"
+									class="card-img-top"
+									alt="chalet 3"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">La Tania</h4>
+									<h6 class="card-Sub-heading">France</h6>
+									<p class="card-text">
+										Chalet 715 is our premier luxury chalet catering for 15
+										guests. We've created a unique, warm, welcoming, home away
+										from home for all the old and new. 30 minutes from Lake
+										Geneva - a perfect spot for holidays all year round.
+									</p>
+									<a class="btn bg-info" href="./pages/Tania.html" role="button"
+										>More details</a
+									>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-		</div>
 
-		<!-- Section: Contact/ Text and picture  -->
-		<div class="bg-light">
-			<section id="contact">
-				<h3 class="py-5 myContact-Title-Mobile">Contact</h3>
-				<form class="forms">
-					<input
-						id="name"
-						class="box-input my-2 px-4"
-						type="text"
-						placeholder="Name..."
-						value=""
-						required
-					/>
-					<br />
-					<input
-						id="email"
-						class="box-input my-2 px-4"
-						type="text"
-						placeholder="Email..."
-						value=""
-						required
-					/>
-					<br />
-					<input
-						id="postcode"
-						class="box-input my-2 px-4"
-						type="text"
-						placeholder="Postcode..."
-						value=""
-						required
-					/>
-					<br />
-					<select
-						name="inputGroupSelect"
-						class="box-input my-2 px-4"
-						id="inputGroupSelect"
-					>
-						<option value="#">Choose an area:</option>
-						<option value="Tania">La Tania</option>
-						<option value="Morzine">Morzine</option>
-						<option value="Tignes">Tignes</option>
-					</select>
+			<!-- Section: Services/Text and picture  -->
+			<div class="bg-info mt-5">
+				<section id="services">
+					<div class="fakeNavbar"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col col-sm-12 col-md-12 col-lg-6">
+								<div class="row">
+									<h3 class="py-5">Services</h3>
+									<p class="p-4">
+										Anyone who has travelled with us will know that it is the
+										experience,quality and dedication of our ski resort teams
+										and our in-resort ski services that really sets us apart
+										from anything else you are likely to experience. We aim to
+										continually exceed clients expectations and ensure every
+										time a client skis with us, it is their best ski holiday so
+										far.
+									</p>
+									<div class="row myCheckboxInfo">
+										<div class="col-2 d-flex justify-content-end pt-2">
+											<i
+												class="fas fa-check-square mx-2 bg-info text-light"
+											></i>
+										</div>
+										<div class="col-10">
+											<p>
+												Our childcare teams deliver a unique service, ensuring
+												that every child gets the attention & support they need.
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-2 d-flex justify-content-end pt-2">
+											<i
+												class="fas fa-check-square mx-2 bg-info text-light"
+											></i>
+										</div>
+										<div class="col-10">
+											<p>
+												Our comprehensive range of ski programmes ensure that
+												all our clients enjoy their time in the mountains.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ovalEffect col-sm-12 col-md-12 col-lg-6 p-0">
+								<img
+									class="circle-image"
+									src="./media/ski-services.jpg"
+									alt="ski services"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 
-					<!-- Section Text-Area -->
+			<!-- Section: Contact/ Text and picture  -->
+			<div class="bg-light">
+				<section id="contact">
+					<h3 class="py-5 myContact-Title-Mobile">Contact</h3>
+					<form class="forms">
+						<input
+							id="name"
+							class="box-input my-2 px-4"
+							type="text"
+							placeholder="Name..."
+							value=""
+							required
+						/>
+						<br />
+						<input
+							id="email"
+							class="box-input my-2 px-4"
+							type="text"
+							placeholder="Email..."
+							value=""
+							required
+						/>
+						<br />
+						<input
+							id="postcode"
+							class="box-input my-2 px-4"
+							type="text"
+							placeholder="Postcode..."
+							value=""
+							required
+						/>
+						<br />
+						<select
+							name="inputGroupSelect"
+							class="box-input my-2 px-4"
+							id="inputGroupSelect"
+						>
+							<option value="#">Choose an area:</option>
+							<option value="Tania">La Tania</option>
+							<option value="Morzine">Morzine</option>
+							<option value="Tignes">Tignes</option>
+						</select>
 
-					<textarea
-						id="box-text-area"
-						class="box-input px-4 py-1 align-self-start"
-						placeholder="Message..."
-					></textarea
-					><br />
+						<!-- Section Text-Area -->
 
-					<input
-						class="btn-submit my-4 mb-5 bg-info"
-						type="submit"
-						value="Submit"
-					/>
-				</form>
-			</section>
-		</div>
+						<textarea
+							id="box-text-area"
+							class="box-input px-4 py-1 align-self-start"
+							placeholder="Message..."
+						></textarea
+						><br />
 
+						<input
+							class="btn-submit my-4 mb-5 bg-info"
+							type="submit"
+							value="Submit"
+						/>
+					</form>
+				</section>
+			</div>
+		</main>
 		<!-- Footer -->
 		<footer class="my-footer bg-dark">
 			<div class="left-footer">

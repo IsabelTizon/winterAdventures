@@ -1,0 +1,21 @@
+/*modal sign*/
+.modal-footer {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+}
+.btn-sign-in-modal,
+.btn-sign-up-modal {
+	width: 50%;
+	background-color: #d2a426;
+}
+.icon-account {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center;
+
+	font-size: 25px;
+}
+.bi-person {
+	color: #008ed6;
+}
