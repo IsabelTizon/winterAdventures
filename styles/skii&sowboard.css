@@ -1,0 +1,793 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* header - movie start */
+.header-movie {
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	opacity: 0.6;
+	z-index: 2;
+	height: 100%;
+	width: 100vw;
+}
+.video-ski {
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+}
+
+/* header - movie end */
+
+/* Package section start */
+.packages-title {
+	font-family: "Dosis", sans-serif;
+	letter-spacing: 3px;
+	padding: 80px 0 20px;
+}
+
+.handmake-Package {
+	width: 90%;
+	margin: auto;
+	height: 400px;
+	padding: 0 100px;
+
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+/* Pictures Packages */
+.show-package {
+	width: 100%;
+	height: 100%;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.show-package .hide {
+	display: none;
+}
+.show-package:hover .hide {
+	display: block;
+}
+.hide {
+	color: var(--cyan-color);
+	font-size: 2rem;
+	border: var(--cyan-color) solid 3px;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.bg-package-individual {
+	grid-area: 1/1/-1/2;
+	text-decoration: none;
+}
+.individual-package-photo {
+	background-image: url("../media/skii&Snowing/packages/individual.jpg");
+}
+.individual-package-photo:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../media/skii&Snowing/packages/individual.jpg");
+}
+
+.bg-package-groups {
+	grid-area: 1/2/-1/3;
+	text-decoration: none;
+}
+.groups-package-photo {
+	background-image: url("../media/skii&Snowing/packages/group2.jpg");
+}
+.groups-package-photo:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../media/skii&Snowing/packages/group2.jpg");
+}
+.bg-package-family {
+	grid-area: 1/3/-1/-1;
+	text-decoration: none;
+}
+.family-package-photo {
+	background-image: url("../media/skii&Snowing/packages/family.jpg");
+}
+.family-package-photo:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("../media/skii&Snowing/packages/family.jpg");
+}
+
+.packages-text {
+	width: 60%;
+	margin: auto;
+	padding: 40px 0;
+}
+/* Package section end */
+
+/* Luxury section start */
+.luxury {
+	margin-top: 100px;
+}
+.bg-luxury {
+	width: 100%;
+	background-color: #008ed6;
+
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 1.2fr 0.8fr;
+}
+
+.luxury-text {
+	width: 60%;
+	margin: auto;
+	padding: 0;
+}
+button.bg-white.my-3.p-2.my-btn-luxury-phone {
+	border-radius: 5px;
+	margin-top: 0 !important;
+}
+button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
+	font-size: 20px;
+	font-weight: 500;
+}
+.img-luxury-carousel {
+	height: 401px;
+}
+/* Luxury section end */
+
+/* holidays section start */
+#holidays {
+	width: 80%;
+	margin: auto;
+}
+.container {
+	max-width: 1140px;
+}
+.holidays-info {
+	width: 60%;
+	margin: auto;
+}
+.holidays-title {
+	padding: 80px 0 0 0;
+}
+
+h2 {
+	font-family: "Dosis", sans-serif;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+.holidays-text.my-5 {
+	width: 100%;
+}
+
+.img-tall-position {
+	position: relative;
+}
+.img-position {
+	position: relative;
+}
+
+.btn-holiday-tall {
+	position: absolute;
+	left: 10%;
+	bottom: 5%;
+	width: 80%;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.btn-holiday {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	width: 80%;
+	height: 40px;
+	border-radius: 5px;
+}
+.btn-holiday.bg-light:hover,
+.btn-holiday-tall:hover {
+	background-color: #008ed6 !important;
+	color: #fff;
+	font-size: 20px;
+	border: #fff 2px solid;
+}
+/* holidays section end */
+
+/* equipment section start */
+#equipment {
+	width: 100%;
+	margin: auto;
+	padding: 80px 0 0 0;
+}
+
+.card-equipment {
+	width: 70%;
+	height: 450px;
+	border-radius: 5px;
+	border-color: #008ed6;
+}
+.card-equipment-left {
+	margin-left: 30%;
+}
+.card-equipment-right {
+	margin-right: 20%;
+}
+.card-img-top {
+	height: 180px;
+}
+
+.row {
+	width: 100%;
+	margin: auto;
+}
+.phones-cards {
+	display: none;
+}
+.card-text {
+	margin-bottom: 5px;
+	height: 120px;
+}
+.btn.bg-info:hover {
+	color: #fff;
+	font-size: 20px;
+}
+/* equipment section end */
+
+/* Section: forfaits start */
+#forfaits {
+	width: 80%;
+	margin: auto;
+	padding: 80px;
+}
+.forfaits-info {
+	width: 90%;
+	margin: auto;
+}
+
+.forfaits-text {
+	margin: auto;
+	width: 80%;
+}
+.handmade-forfaits {
+	margin: auto;
+
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+.short-img-handmade {
+	height: 270px;
+}
+.img-handmade {
+	height: 550px;
+}
+.left-picture {
+	grid-area: 1/1/-1/2;
+
+	background-image: url("../media/skii&Snowing/forfaits/pieton.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.middle-picture {
+	grid-area: 1/2/-1/3;
+
+	background-image: url("../media/skii&Snowing/forfaits/diario.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.right-picture {
+	grid-area: 1/3/-1/-1;
+
+	display: grid;
+	grid-gap: 5px;
+	grid-template-rows: 2fr;
+}
+.top-right-picture {
+	grid-area: 1/-1/2/-1;
+
+	background-image: url("../media/skii&Snowing/forfaits/nocturnal.jpg");
+	height: 270px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.bottom-right-picture {
+	grid-area: 2/-1/-1/-1;
+
+	background-image: url("../media/skii&Snowing/forfaits/kids.jpg");
+	height: 270px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.button-position {
+	padding: 10px;
+	margin: 0 auto 40px;
+	width: 80%;
+	border-radius: 5px;
+}
+.button-position:hover {
+	background-color: #008ed6 !important;
+	color: #fff;
+	font-size: 20px;
+	border: #fff 2px solid;
+}
+
+/* Section: forfaits end */
+
+/* Media query tablet start */
+@media only screen and (max-width: 900px) {
+	/* header - movie start */
+	header {
+		height: calc(100vh - 80px);
+		background-image: url("../media/video/mobile/mobile-home-page.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	video {
+		display: none;
+	}
+	/* header - movie end */
+
+	/* Package section start */
+	.packages-title {
+		font-size: 50px !important;
+		padding: 0 0 5px;
+		color: rgb(0, 0, 0) !important;
+	}
+	.handmake-Package {
+		padding: 0;
+	}
+
+	.packages-text {
+		width: 90% !important;
+		margin: auto;
+	}
+	.show-package {
+		align-items: end;
+	}
+	.show-package .hide {
+		display: block;
+	}
+
+	.hide {
+		color: rgb(0, 0, 0);
+		border: none;
+		font-weight: 500;
+	}
+	/* Package section end */
+
+	/* Luxury section start */
+	.luxury.my-5 {
+		margin: 900px 0;
+	}
+	.bg-luxury {
+		grid-template-columns: repeat(2, calc(100% / 2));
+	}
+
+	.luxury-text {
+		width: 80%;
+	}
+	.img-luxury-carousel {
+		height: 401px;
+	}
+	.luxury-p {
+		font-size: 14px;
+	}
+	/* Luxury section end */
+
+	/* holidays section start */
+	#holidays,
+	#equipment,
+	#forfaits {
+		width: 100%;
+	}
+	.holidays-title.d-flex.justify-content-center {
+		width: 100% !important;
+		text-align: center !important;
+		padding: 0;
+	}
+	.holidays-info {
+		width: 80% !important;
+	}
+	.holidays-text.my-5 {
+		width: 100% !important;
+		margin: 20px auto !important;
+	}
+	.container.mb-5 {
+		width: 80%;
+		margin: auto;
+	}
+	/* holidays section end */
+
+	/* equipment section start */
+	#equipment {
+		padding: 0;
+	}
+	.container {
+		padding: 0;
+	}
+	.col.col-sm-12.col-md-12.col-lg-4 {
+		width: 100%;
+	}
+	.equipment-title.py-4 {
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 0 !important;
+	}
+
+	.equipment-text {
+		width: 80%;
+		margin: auto;
+		padding-bottom: 40px;
+	}
+	.col.col-8.col-sm-12.p-0 {
+		margin-top: 30px;
+	}
+	.card-equipment {
+		width: 75%;
+		height: 450px;
+		border-radius: 5px;
+		border-color: blue;
+	}
+	.card-text {
+		font-size: 15px;
+	}
+
+	/* equipment section end */
+
+	/* Section: forfaits start */
+	#forfaits {
+		width: 90%;
+		margin: 0 auto 40px;
+		padding: 0;
+	}
+	.forfaits-title.d-flex.justify-content-center {
+		margin-top: 80px !important;
+	}
+
+	.forfaits-text {
+		width: 90% !important;
+		margin-top: 20px !important;
+	}
+	.handmade-forfaits {
+		width: 90%;
+	}
+	/* Section: forfaits end */
+}
+/* Media query tablet end */
+
+@media only screen and (max-width: 768px) {
+	/* Luxury start */
+	h2.luxury-title {
+		margin-bottom: 0;
+	}
+	.luxury-text {
+		width: 90% !important;
+		/* margin: auto; */
+		padding: 0;
+	}
+	/* Luxury start */
+
+	/* Equipment start */
+	#carousel-web {
+		display: none;
+	}
+	.card-equipment-phone.bg-light {
+		height: 450px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: rgb(255, 255, 255) !important;
+	}
+	.phones-cards {
+		width: 85% !important;
+		margin: auto;
+		display: block;
+		padding: 0;
+	}
+	.card-img-top-phone {
+		height: 200px;
+		width: 100%;
+	}
+	.card-body-phone {
+		height: 200px;
+	}
+	.card-title-phone {
+		padding-top: 10px;
+	}
+	.card-text-phone {
+		width: 100%;
+		padding: 10px 0;
+	}
+	#carousel-web {
+		display: none;
+	}
+	.card-equipment-phone.bg-light {
+		height: 450px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: rgb(255, 255, 255) !important;
+	}
+	.phones-cards {
+		width: 100%;
+		margin: auto;
+		display: block;
+		padding: 0;
+	}
+
+	.card-img-top-phone {
+		height: 200px;
+		width: 100%;
+	}
+	.card-body-phone {
+		height: 200px;
+	}
+	.card-title-phone {
+		padding-top: 10px;
+	}
+	.card-text-phone {
+		width: 100%;
+		padding: 10px 0;
+	}
+	/* Equipment end */
+}
+/* Media query Mobile start */
+@media only screen and (max-width: 600px) {
+	/* header */
+	header {
+		height: calc(100vh - 80px);
+		background-image: url("../media/video/mobile/mobile-home-page.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	video {
+		display: none;
+	}
+
+	/* Package section start */
+	.packages-title {
+		font-size: 40px !important;
+	}
+	.handmake-Package {
+		height: auto;
+		padding: 0;
+
+		display: grid;
+		grid-gap: 1em;
+		grid-template-rows: repeat(3, 300px);
+	}
+	/* Pictures Packages */
+	.bg-package-individual,
+	.bg-package-groups,
+	.bg-package-family {
+		width: inherit;
+	}
+
+	.bg-package-individual {
+		grid-area: 1/1/2/-1;
+	}
+	.bg-package-groups {
+		grid-area: 2/1/3/-1;
+	}
+	.bg-package-family {
+		grid-area: 3/1/-1/-1;
+	}
+	.show-package {
+		align-items: end;
+	}
+	.show-package .hide {
+		display: block;
+	}
+
+	.hide {
+		color: rgb(0, 0, 0);
+		border: none;
+		font-weight: 500;
+	}
+	.individual-package-photo:hover {
+		background: url("../media/skii&Snowing/packages/individual.jpg");
+	}
+
+	.groups-package-photo:hover {
+		background: url("../media/skii&Snowing/packages/group2.jpg");
+	}
+	.family-package-photo:hover {
+		background: url("../media/skii&Snowing/packages/family.jpg");
+	}
+
+	.packages-text {
+		width: 90%;
+		padding: 40px 5px;
+	}
+	/* Package section end */
+
+	/* Luxury section start */
+	.bg-luxury {
+		width: 100%;
+		background-color: #0dcaf0;
+
+		display: grid;
+		grid-gap: 0;
+		grid-template-rows: 1.3fr 1fr;
+	}
+	.luxury-info {
+		grid-area: 1/1/2/-1;
+	}
+	#carouselLuxuryControls {
+		grid-area: 2/1/-1/-1;
+	}
+
+	.luxury-text {
+		width: 90%;
+		margin: auto;
+	}
+	.img-luxury-carousel {
+		height: 300px;
+	}
+	/* Luxury section end */
+
+	/* holidays section start */
+	section#holidays {
+		width: 90% !important;
+	}
+	.holidays-title {
+		text-align: center;
+		padding: 0;
+	}
+	.holidays-info {
+		width: 100%;
+	}
+	.container.mb-5 {
+		width: 95% !important;
+	}
+	h2 {
+		font-family: "Source Serif Pro", serif;
+		font-weight: 700;
+	}
+	.container.mb-5 {
+		width: 90%;
+	}
+
+	.my-row-holidays.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		margin: 0;
+	}
+	.img-holidays-tall.w-100.h-100 {
+		height: 400px !important;
+	}
+
+	/* holidays section end */
+
+	/* equipment section start */
+	#equipment {
+		width: 100%;
+		padding: 0;
+	}
+	.equipment-title.py-4 {
+		text-align: center;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.equipment-text {
+		padding-bottom: 30px;
+		width: 90%;
+	}
+	#carousel-web {
+		display: none;
+	}
+	.card-equipment-phone.bg-light {
+		height: 450px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: rgb(255, 255, 255) !important;
+	}
+	.phones-cards {
+		width: 100%;
+		margin: auto;
+		display: block;
+		padding: 0;
+	}
+
+	.card-img-top-phone {
+		height: 200px;
+		width: 100%;
+	}
+	.card-body-phone {
+		height: 200px;
+	}
+	.card-title-phone {
+		padding-top: 10px;
+	}
+	.card-text-phone {
+		width: 100%;
+		padding: 10px 0;
+	}
+	/* equipment section end */
+
+	/* Section: forfaits start */
+	.forfaits-info {
+		width: 100%;
+	}
+	.forfaits-title {
+		text-align: center;
+		margin: 0 !important;
+	}
+	.forfaits-title.d-flex.justify-content-center {
+		margin-top: 40px !important;
+	}
+
+	.forfaits-text.my-5 {
+		width: 100%;
+		margin: 20px auto 20px auto !important;
+	}
+	.handmade-forfaits {
+		display: grid;
+		grid-gap: 0;
+		grid-template-rows: repeat(3, 300px);
+		grid-template-columns: 1fr;
+	}
+	.left-picture {
+		grid-area: 1/1/2/-1;
+	}
+	.middle-picture {
+		grid-area: 2/1/3/-1;
+	}
+	.right-picture {
+		grid-area: 3/1/-1/-1;
+	}
+	.short-img-handmade {
+		width: 100%;
+		height: 300px;
+	}
+	.img-handmade {
+		width: 100%;
+		height: 300px;
+	}
+	/* Section: forfaits end */
+
+	/* Footer start */
+	.ski-footer {
+		margin-top: 300px;
+	}
+	/* Footer end */
+
+	/* Media query Mobile end */
+}

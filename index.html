@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Isabel Tizon Arranz">
+    <meta name="description" content="Main Page for Winter Adventures Agency">
+
+    <title>Winter Adventures Home Page</title>
+    <!-- Sources -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Links Bs css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- External styles -->
+    <link href="./styles/index.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Winter Adventures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accommodation">Accommodation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section: Home/Video  -->
+    <header>
+        <section id="home">
+            <div class="overlay w-100 h-100"></div>
+            <video class="video-index" autoplay muted loop>
+                <!-- <source src="./media/video/Mt_Baker.mp4" type="video/mp4"> -->
+                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+            </video>
+            <div class="myHolidays d-flex justify-content-center align-items-center text-center">
+                <div class="row d-flex justify-content-center">
+                    <h1 class="display-3 text-white p-0">Holidays in the snow...</h1>
+
+                    <p class="mb-0 text-white p-0">Skiing & snow accomodation</p>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <!-- Section: Accommodation/3cards  -->
+    <section id="accommodation">
+        <div class="fakeNavbar-Accommodation"></div>
+        <div class="card-group d-flex justify-content-center g-5">
+            <div class="row">
+                <!-- card 1 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./media/chalet1.jpg" class="card-img-top" alt="chalet 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Tignes</h4>
+                            <h6 class="card-Sub-heading">France</h6>
+                            <p class="card-text">A very well furnished chalet. The Kalinda is great for
+                                those
+                                who are after a
+                                range of facilities but don’t wish to travel far. Spa's, gyms,
+                                restaurants and a
+                                ski shop are
+                                right on your doorstep.</p>
+                            <a class="btn bg-info" href="./pages/Tignes.html" role="button">More details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- card 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./media/chalet2.jpg" class="card-img-top" alt="chalet 2">
+                        <div class="card-body">
+                            <h4 class="card-title">Morzine</h4>
+                            <h6 class="card-Sub-heading">France</h6>
+                            <p class="card-text">Situated in St Jean d’Aulps in the "Portes du Soleil"
+                                on the
+                                Grande Route des
+                                Alpes and 30 minutes south of Lake Geneva- a perfect spot for holidays
+                                all year
+                                round.
+                                A 10 minute walk from the centre of the village.</p>
+                            <a class="btn bg-info" href="./pages/Morzine.html" role="button">More details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- card 3 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./media/chalet3.jpg" class="card-img-top" alt="chalet 3">
+                        <div class="card-body">
+                            <h4 class="card-title">La Tania</h4>
+                            <h6 class="card-Sub-heading">France</h6>
+                            <p class="card-text">Chalet 715 is our premier luxury chalet catering for 15
+                                guests.
+                                We've created a
+                                unique, warm, welcoming, home away from home for all the old and new.
+                                30 minutes from Lake Geneva - a perfect spot for holidays all year
+                                round.</p>
+                            <a class="btn bg-info" href="./pages/Tania.html" role="button">More details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Services/Text and picture  -->
+    <div class="bg-info mt-5">
+        <section id="services">
+            <div class="fakeNavbar"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-sm-12 col-md-12 col-lg-6">
+                        <div class="row">
+                            <h3 class="py-5">Services</h3>
+                            <p class="p-4">Anyone who has travelled with us will know that it is the
+                                experience,quality
+                                and dedication of our ski resort teams and our in-resort ski services that really sets
+                                us apart from anything else you are likely to experience. We aim to continually exceed
+                                clients expectations and ensure every time a client skis with us, it is their best ski
+                                holiday so far.</p>
+                            <div class="row myCheckboxInfo">
+                                <div class="col-2 d-flex justify-content-end pt-2">
+                                    <i class="fas fa-check-square mx-2 bg-info text-light"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p>Our childcare teams deliver a unique
+                                        service,
+                                        ensuring
+                                        that
+                                        every
+                                        child gets the attention & support
+                                        they need.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2 d-flex justify-content-end pt-2">
+                                    <i class="fas fa-check-square mx-2 bg-info text-light"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p>Our comprehensive range of ski programmes
+                                        ensure
+                                        that
+                                        all
+                                        our
+                                        clients enjoy their time in the
+                                        mountains.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ovalEffect col-sm-12 col-md-12 col-lg-6 p-0">
+                        <img class="circle-image" src="./media/ski-services.jpg" alt="ski services">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Section: Contact/ Text and picture  -->
+    <div class="bg-light">
+        <section id="contact">
+
+            <h3 class="py-5 myContact-Title-Mobile">Contact</h3>
+            <form class="forms">
+                <input id="name" class="box-input my-2 px-4" type="text" placeholder="Name..." value="" required>
+                <br>
+                <input id="email" class="box-input my-2 px-4" type="text" placeholder="Email..." value="" required>
+                <br>
+                <input id="postcode" class="box-input my-2 px-4" type="text" placeholder="Postcode..." value=""
+                    required>
+                <br>
+                <select name="inputGroupSelect" class="box-input my-2 px-4" id="inputGroupSelect">
+                    <option value="#">Choose an area:</option>
+                    <option value="Tania">La Tania</option>
+                    <option value="Morzine">Morzine</option>
+                    <option value="Tignes">Tignes</option>
+                </select>
+
+
+                <!-- Section Text-Area -->
+
+                <textarea id="box-text-area" class="box-input px-4 py-1 align-self-start"
+                    placeholder="Message..."></textarea><br />
+
+                <input class="btn-submit  my-4 mb-5 bg-info" type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="my-footer bg-dark">
+        <div class="left-footer">
+            <a href="./pages/Skiing&Snowing.html">Ski and Snowboard</a>
+        </div>
+
+        <div class="middle-footer">
+            <span>Winter Adventures&copy;2020</span>
+        </div>
+
+        <div class="right-footer">
+            <a href="https://www.instagram.com/"><img class="icon" src="./media/icons/grey-Instagram.png"
+                    alt="Instagram Icon" /></a>
+            <a href="https://twitter.com/"><img class="icon" src="./media/icons/grey-Twitter.png"
+                    alt="Instagram Icon" /></a>
+        </div>
+    </footer>
+
+
+
+    <!-- Bs Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

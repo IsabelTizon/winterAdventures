@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* carousel start */
+.myCarouselWinterAdventures {
+	height: 500px;
+	width: 50%;
+	margin: auto;
+}
+
+.carousel,
+.carousel-inner {
+	height: 400px;
+	margin-top: 30px;
+}
+/* carousel end */
+
+/* section accomodation start */
+.ovalEffectAccommodation {
+	height: 450px;
+	width: 100%;
+	margin: auto 0;
+	clip-path: ellipse(45% 39% at 51% 50%);
+}
+/* section accomodation end */
+
+/* Media query tablet start */
+@media only screen and (max-width: 900px) {
+	/* carousel start */
+	.myCarouselWinterAdventures {
+		width: 85%;
+	}
+	/* carousel end */
+}
+/* Media query tablet end */
+
+/* Media query Mobile start */
+@media only screen and (max-width: 600px) {
+	/* carousel start */
+	.myCarouselWinterAdventures {
+		height: 350px;
+		margin: 0 !important;
+		width: 100vw !important;
+	}
+	.title-carousel {
+		padding-left: 20px;
+	}
+
+	#tignesCarousel,
+	.carousel-inner {
+		height: 250px;
+	}
+	/* Carousel end*/
+
+	/* section services start */
+	.section-services.mt-5 {
+		margin-top: 0 !important;
+	}
+	/* section services end*/
+
+	/* section accomodation start */
+	#services {
+		max-width: 90%;
+	}
+	/* section accomodation end */
+}
+/* Media query Mobile end */
