@@ -29,6 +29,16 @@
 /* header - movie end */
 
 /* Package section start */
+.container-packages-top {
+	display: flex;
+	flex-direction: column;
+	width: 76%;
+	margin: auto;
+}
+.container-title {
+	display: flex;
+	justify-content: center;
+}
 .packages-title {
 	font-family: "Dosis", sans-serif;
 	letter-spacing: 3px;
