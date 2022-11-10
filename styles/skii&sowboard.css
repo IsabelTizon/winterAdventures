@@ -84,11 +84,16 @@ tr {
 	width: 35%;
 	padding-left: 40px;
 }
-
 .container-middle-text {
 	display: flex;
 	justify-content: center;
 }
+/* js section prices packages */
+#photo {
+	width: 100%;
+	height: 300px;
+}
+/**/
 .handmake-Package {
 	width: 90%;
 	margin: auto;
