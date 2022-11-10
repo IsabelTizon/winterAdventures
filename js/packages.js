@@ -10,14 +10,9 @@ function CalculateCost() {
 
 	let discount = 0;
 
-	if (name == "") {
-		document.getElementById("details").innerHTML = "YOU MUST ENTER YOUR NAME";
-	} else if (numPeople <= 0) {
-		document.getElementById("details").innerHTML =
-			"YOU MUST ENTER THE NUMBER OF NIGHTS";
-	} else if (packageType == "No") {
-		document.getElementById("details").innerHTML =
-			"YOU MUST ENTER THE TYPE OF ROOM";
+	if (!name || !numPeople || !packageType) {
+		document.getElementById("enterMoreDetails").innerHTML =
+			"YOU MUST ENTER ALL THE DETAILS";
 	} else {
 		let total = numPeople * rate;
 
