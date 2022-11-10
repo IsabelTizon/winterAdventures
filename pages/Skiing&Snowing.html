@@ -113,19 +113,111 @@
 							Packages
 						</h2>
 					</div>
-					<p class="text-title-packages">
-						It is a long established fact that a reader will be distracted by
-						the readable content of a page when looking at its layout. The point
-						of using Lorem Ipsum is that it has a more-or-less normal
-						distribution of letters, as opposed to using 'Content here, content
-						here', making it look like readable English. Many desktop publishing
-						packages and web page editors now use Lorem Ipsum as their default
-						model text, and a search for 'lorem ipsum' will uncover many web
-						sites still in their infancy. Various versions have evolved over the
-						years, sometimes by accident, sometimes on purpose (injected humour
-						and the like).
-					</p>
+
 					<!-- table with packages section start -->
+					<div class="container-table-jsPrices">
+						<div class="container-table-text">
+							<p class="text-packages">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout.
+								The point of using Lorem Ipsum is that it has a more-or-less
+								normal distribution of letters, as opposed to using 'Content
+								here, content here', making it look like readable English. Many
+								desktop publishing packages and web page editors now use Lorem
+								Ipsum as their default model text, and a search for 'lorem
+								ipsum' will uncover many web sites still in their infancy.
+								Various versions have evolved over the years, sometimes by
+								accident, sometimes on purpose (injected humour and the like).
+							</p>
+							<div class="strong-line">
+								<h4 class="strong-line">Check your packages bellow</h4>
+							</div>
+							<table class="table-packages">
+								<tr class="row-title">
+									<td class="row-package-type">Package</td>
+									<td class="row-package-prices">Ski, Boots & Poles</td>
+									<td class="row-package-prices">Snowboard & Boots</td>
+								</tr>
+
+								<tr class="row-content">
+									<td class="row-package-type">Economy</td>
+									<td class="row-package-prices">£ 90 per week per person</td>
+									<td class="row-package-prices">£ 119 per week per person</td>
+								</tr>
+								<tr class="row-content">
+									<td class="row-package-type">Intermediate</td>
+									<td class="row-package-prices">£ 120 per week per person</td>
+									<td class="row-package-prices">£ 145 per week per person</td>
+								</tr>
+								<tr class="row-content">
+									<td class="row-package-type">Performance</td>
+									<td class="row-package-prices">£ 145 per week per person</td>
+									<td class="row-package-prices">£ 170 per week per person</td>
+								</tr>
+								<tr class="row-content">
+									<td>
+										<span>Note:</span> 10% discount on parties of 4 or more
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="right-prices">
+							<div class="container-middle-text">
+								<h3>Booking a Package</h3>
+							</div>
+
+							<div id="jsPrices">
+								<img
+									id="photo"
+									src="img/package.jpg"
+									alt="package's type image"
+								/>
+
+								<form id="booking" method="POST">
+									<input
+										type="text"
+										id="customername"
+										placeholder="Name"
+										autofocus
+										required
+									/>
+									<input
+										type="number"
+										id="package"
+										placeholder="Type of package"
+										min="1"
+										required
+									/>
+
+									<select id="packageType" name="packageType">
+										<option value="No">Please select your package type:</option>
+										<option value="Economy-ski-boots-poles">
+											Economy-ski-boots-poles
+										</option>
+										<option value="Economy-snowboard-boots">
+											Economy-snowboard-boots
+										</option>
+										<option value="Intermediate-ski-boots-poles">
+											Intermediate-ski-boots-poles
+										</option>
+										<option value="Intermediate-snowboard-boots">
+											Intermediate-snowboard-boots
+										</option>
+										<option value="Performance-ski-boots-poles">
+											Performance-ski-boots-poles
+										</option>
+										<option value="Performance-snowboard-boots">
+											Performance-snowboard-boots
+										</option>
+									</select>
+								</form>
+
+								<button id="Book">Book Now</button>
+							</div>
+						</div>
+						<p id="details"></p>
+					</div>
+
 					<!-- table with packages section finish -->
 				</div>
 

@@ -42,9 +42,53 @@
 .packages-title {
 	font-family: "Dosis", sans-serif;
 	letter-spacing: 3px;
-	padding: 80px 0 20px;
+	padding: 80px 0 40px;
+}
+.container-table-text {
+	width: 65%;
+}
+.text-packages {
+	margin-bottom: 50px;
+}
+.strong-line {
+	display: flex;
+	justify-content: center;
+	color: #008ed6;
+	margin-bottom: 20px;
+}
+/* left table  prices */
+.container-table-jsPrices {
+	display: flex;
+	flex-direction: row;
+}
+.table-packages {
+	border: 1px solid black;
+}
+tr {
+	border: 1px solid black;
+}
+.row-title {
+	height: 50px;
+}
+.row-package-type {
+	width: 25%;
+}
+.row-package-prices {
+	width: 35%;
+}
+.row-content {
+	height: 40px;
+}
+/* right prices js */
+.right-prices {
+	width: 35%;
+	padding-left: 40px;
 }
 
+.container-middle-text {
+	display: flex;
+	justify-content: center;
+}
 .handmake-Package {
 	width: 90%;
 	margin: auto;
