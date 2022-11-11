@@ -38,4 +38,5 @@ canvas {
 	width: 80px;
 	height: 58px;
 	margin-left: 5%;
+	border-radius: 5px;
 }

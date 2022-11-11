@@ -48,6 +48,9 @@ body {
 	color: black;
 	background-color: white;
 }
+canvas {
+	margin-left: 50% !important;
+}
 
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
