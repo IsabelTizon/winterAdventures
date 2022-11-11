@@ -34,7 +34,7 @@ function CalculateCost() {
 
 		document.getElementById(
 			"modalNumPeople"
-		).innerHTML = `$numPeople} package £" ${rate}  per night`;
+		).innerHTML = `${numPeople} package £${rate}  per night`;
 
 		document.getElementById(
 			"modalDiscount"
