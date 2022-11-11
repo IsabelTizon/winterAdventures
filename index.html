@@ -48,13 +48,13 @@
 
 		<!-- External styles -->
 		<link href="./styles/index.css" rel="stylesheet" />
-		<link rel="stylesheet" href="../styles/general.css" />
+		<link rel="stylesheet" href="./styles/general.css" />
 	</head>
 
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Winter Adventures</a>
+				<canvas class="canvas"></canvas>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -90,9 +90,6 @@
 								>Packages</a
 							>
 						</li>
-						<li class="nav-item nav-item-userName">
-							<span id="userNameNav"></span>
-						</li>
 						<li class="nav-item">
 							<a
 								href="#"
@@ -102,6 +99,9 @@
 							>
 								<i class="bi bi-person nav-icon"></i>
 							</a>
+						</li>
+						<li class="nav-item nav-item-userName">
+							<span id="userNameNav"></span>
 						</li>
 					</ul>
 				</div>
@@ -113,11 +113,7 @@
 			<section id="home">
 				<div class="overlay w-100 h-100"></div>
 				<video class="video-index" autoplay muted loop>
-					<!-- <source src="./media/video/Mt_Baker.mp4" type="video/mp4"> -->
-					<source
-						src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
-						type="video/mp4"
-					/>
+					<source src="./media/video/Mt_Baker.mp4" type="video/mp4" />
 				</video>
 				<div
 					class="myHolidays d-flex justify-content-center align-items-center text-center"
@@ -393,7 +389,7 @@
 			</div>
 
 			<div class="middle-footer">
-				<span>Winter Adventures&copy;2020</span>
+				<span>Winter Adventures&copy;2022</span>
 			</div>
 
 			<div class="right-footer">
@@ -413,10 +409,36 @@
 		</footer>
 
 		<!-- Bs Bundle with Popper -->
-		<script
+		<!-- <script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
+		></script> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			document.getElementById("goToSignUp").onclick = function () {
+				location.href = "../pages/sign-up.html";
+			};
+			document.getElementById("goToSignIn").onclick = function () {
+				location.href = "../pages/sign-in.html";
+			};
+		</script>
+		<script src="./js/logged.js"></script>
+		<script src="./js/canvas.js"></script>
 	</body>
 </html>
