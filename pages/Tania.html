@@ -9,6 +9,7 @@
 		<meta name="description" content="Main Page for Winter Adventures Agency" />
 
 		<title>Tania</title>
+
 		<!-- HERE JavaScript Libs & Style Sheets-->
 		<link
 			rel="stylesheet"
@@ -32,14 +33,14 @@
 			src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
 		></script>
 		<!-- HERE JavaScript Libs & Style Sheets end-->
+
 		<!-- fontawesome -->
 		<link
 			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-			integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 			crossorigin="anonymous"
 		/>
-
 		<!-- Boostrap css -->
 		<link
 			rel="stylesheet"
@@ -366,28 +367,34 @@
 					<!-- weather -->
 					<div class="row-weather">
 						<div class="card">
-							<h4 class="name" id="name">La Tania Weather</h4>
-							<p class="temp"></p>
-							<p class="desc"></p>
-							<img
-								style="display: none; width: 60px; height: 60px"
-								src=""
-								alt="weather icon"
-								class="icon"
-							/>
+							<div class="card-title-weather">
+								<h4 class="name" id="name">La Tania Weather</h4>
+							</div>
+							<div class="card-content-weather">
+								<div class="card-desc-weather">
+									<p class="temp">°</p>
+									<p class="desc"></p>
+								</div>
+								<div class="card-img-weather">
+									<img
+										style="display: none; width: 120px; height: 110px"
+										src=""
+										alt="weather icon"
+										class="icon"
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- book a room -->
 					<div class="row-book">
 						<div class="container-middle-text">
-								<h4>Booking your accommodation</h4>
+							<div class="middle">
+								<h4 class="text-accomodation">Booking your accommodation</h4>
 							</div>
 
 							<div id="jsPrices">
-								<img
-									id="photo"
-									src="../media/laTania-book/single.jpg"
-								/>
+								<img id="photo" src="../media/laTania-book/single.jpg" />
 
 								<form id="booking" method="POST">
 									<input
@@ -407,21 +414,11 @@
 
 									<select id="roomType" name="roomType">
 										<option value="No">Select your room:</option>
-										<option value="Single">
-											Single Room
-										</option>
-										<option value="Twin">
-											Twin
-										</option>
-										<option value="Double">
-											Double
-										</option>
-										<option value="Superior">
-											Superior Double
-										</option>
-										<option value="Triple">
-											Triple
-										</option>
+										<option value="Single">Single Room</option>
+										<option value="Twin">Twin</option>
+										<option value="Double">Double</option>
+										<option value="Superior">Superior Double</option>
+										<option value="Triple">Triple</option>
 									</select>
 								</form>
 
@@ -459,7 +456,6 @@
 												</button>
 											</div>
 											<div class="modal-body">
-											
 												<p id="enterMoreDetails"></p>
 												<p id="modalName"></p>
 												<p id="modalroomType"></p>
@@ -487,14 +483,23 @@
 					</div>
 				</div>
 				<!-- table with packages section finish -->
-					</div>
-				</div>
+
 				<div class="container-map">
 					<div class="address-accommodation">
-						<p>La Tania</p>
-						<p>73120 Courchevel, Francia</p>
+						<div class="middle">
+							<i class="bi bi-geo-alt"></i>
+						</div>
+						<div class="middle">
+							<h4>Map & Directions</h4>
+						</div>
+						<div class="middle">
+							<p>La Tania</p>
+						</div>
+						<div class="middle">
+							<p>73120 Courchevel, Francia</p>
+						</div>
 					</div>
-					<div style="width: 50vw; height: 100vh" id="mapContainer"></div>
+					<div style="width: 50vw; height: 80vh" id="mapContainer"></div>
 				</div>
 			</section>
 		</main>
@@ -557,7 +562,7 @@
 			var LocationOfMarker = { lat: 45.432169, lng: 6.5963993 };
 
 			// optionally - resize a larger PNG image to a specific size
-			var pngIcon = new H.map.Icon("../pages/media/icons/snow-house.png", {
+			var pngIcon = new H.map.Icon("../media/icons/snow-house.png", {
 				size: { w: 36, h: 36 },
 			});
 

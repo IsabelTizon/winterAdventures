@@ -20,11 +20,11 @@ function laTania() {
 			let iconCode = data["weather"][0]["icon"];
 
 			//<h1 class="name" id="name"></h1> in HTML
-			desc.innerHTML = `Description: ${descValue}`;
+			desc.innerHTML = `${descValue}`;
 			//<p class="temp"></p> in the HTML
 			// temp.innerHTML = `Temperature: ${tempValue}`;
 			//<p class="desc"></p> in the HTML
-			temp.innerHTML = `Temperature: ${desCelsiusValue}`;
+			temp.innerHTML = `${desCelsiusValue}°`;
 			//Temp in Celsius
 
 			icon.style.display = "block";
