@@ -10,6 +10,30 @@
 
 		<title>Morzine</title>
 
+		<!-- HERE JavaScript Libs & Style Sheets-->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
+		/>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+		></script>
+		<!-- HERE JavaScript Libs & Style Sheets end-->
+
 		<!-- fontawesome -->
 		<link
 			rel="stylesheet"
@@ -322,6 +346,146 @@
 					</div>
 				</section>
 			</div>
+			<section class="new-section">
+				<div class="container-weather-book">
+					<!-- weather -->
+					<div class="row-weather">
+						<div class="card">
+							<div class="card-title-weather">
+								<h4 class="name" id="name">Morzine Weather</h4>
+							</div>
+							<div class="card-content-weather">
+								<div class="card-desc-weather">
+									<p class="temp">°</p>
+									<p class="desc"></p>
+								</div>
+								<div class="card-img-weather">
+									<img
+										style="display: none; width: 120px; height: 110px"
+										src=""
+										alt="weather icon"
+										class="icon"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- book a room -->
+					<div class="row-book">
+						<div class="container-middle-text">
+							<div class="middle">
+								<h4 class="text-accomodation">Booking your accommodation</h4>
+							</div>
+
+							<div id="jsPrices">
+								<img id="photo" src="../media/laTania-book/single.jpg" />
+
+								<form id="booking" method="POST">
+									<input
+										type="text"
+										id="customername"
+										placeholder="Name"
+										autofocus
+										required
+									/>
+									<input
+										type="number"
+										id="nights"
+										placeholder="Number of nights"
+										min="1"
+										required
+									/>
+
+									<select id="roomType" name="roomType">
+										<option value="No">Select your room:</option>
+										<option value="Single">Single Room</option>
+										<option value="Twin">Twin</option>
+										<option value="Double">Double</option>
+										<option value="Superior">Superior Double</option>
+										<option value="Triple">Triple</option>
+									</select>
+								</form>
+
+								<button
+									type="button"
+									id="Book"
+									class="btn btn-primary"
+									data-toggle="modal"
+									data-target="#exampleModal"
+								>
+									Book Now
+								</button>
+								<!-- Modal -->
+								<div
+									class="modal fade"
+									id="exampleModal"
+									tabindex="-1"
+									role="dialog"
+									aria-labelledby="exampleModalLabel"
+									aria-hidden="true"
+								>
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">
+													Your Room Selected
+												</h5>
+												<button
+													type="button"
+													class="close"
+													data-dismiss="modal"
+													aria-label="Close"
+												>
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p id="enterMoreDetails"></p>
+												<p id="modalName"></p>
+												<p id="modalroomType"></p>
+												<p id="modalNumNights"></p>
+												<p id="modalDiscount"></p>
+												<p id="modalTotalCost"></p>
+											</div>
+											<div class="modal-footer">
+												<button
+													type="button"
+													class="btn btn-secondary"
+													data-dismiss="modal"
+												>
+													Close
+												</button>
+												<button type="button" class="btn btn-primary">
+													Checkout
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- table with packages section finish -->
+
+				<div class="container-map">
+					<div class="address-accommodation">
+						<div class="middle">
+							<i class="bi bi-geo-alt"></i>
+						</div>
+						<div class="middle">
+							<h4>Map & Directions</h4>
+						</div>
+						<div class="middle">
+							<p>Morzine</p>
+						</div>
+						<div class="middle">
+							<p>74110 Morzine, Francia</p>
+						</div>
+					</div>
+					<div style="width: 50vw; height: 80vh" id="mapContainer"></div>
+				</div>
+			</section>
 		</main>
 		<!-- Footer -->
 		<footer class="my-footer bg-dark">
@@ -351,6 +515,54 @@
 				/></a>
 			</div>
 		</footer>
+		<script>
+			//Step 1: initialize communication with the platform
+			// Replace variable YOUR_API_KEY with your own apikey
+			var platform = new H.service.Platform({
+				apikey: "YdQfvAKHB9bACiRbTq93B5WoGcVzgeRVDYBcwFpT1Ck",
+			});
+			var defaultLayers = platform.createDefaultLayers();
+			//Step 2: initialize a map - this map is centered over Europe
+			var map = new H.Map(
+				document.getElementById("mapContainer"),
+				defaultLayers.vector.normal.map,
+				{
+					center: { lat: 46.1799561, lng: 6.7091057 },
+					zoom: 4,
+					pixelRatio: window.devicePixelRatio || 1,
+				}
+			);
+			// add a resize listener to make sure that the map occupies the whole container
+			window.addEventListener("resize", () => map.getViewPort().resize());
+			//Step 3: make the map interactive
+			// MapEvents enables the event system
+			// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+			var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+			// Create the default UI components
+			var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+			// Marker code goes here
+			var LocationOfMarker = { lat: 46.1799561, lng: 6.7091057 };
+
+			// optionally - resize a larger PNG image to a specific size
+			var pngIcon = new H.map.Icon("../media/icons/snow-house.png", {
+				size: { w: 36, h: 36 },
+			});
+
+			// Create a marker using the previously instantiated icon:
+			var marker = new H.map.Marker(LocationOfMarker, { icon: pngIcon });
+
+			// Add the marker to the map:
+			map.addObject(marker);
+
+			// Optionally,
+			//Show the marker in the center of the map
+			map.setCenter(LocationOfMarker);
+
+			//Zooming so that the marker can be clearly visible
+			map.setZoom(8);
+		</script>
 
 		<!-- Bs Bundle with Popper -->
 		<!-- <script
@@ -378,5 +590,7 @@
 		<script src="../js/logged.js"></script>
 		<script src="../js/canvas.js"></script>
 		<script src="../js/todayDay.js"></script>
+		<script src="../js/morzineWeather.js"></script>
+		<script src="../js/morzine-book.js"></script>
 	</body>
 </html>
