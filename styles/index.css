@@ -92,9 +92,9 @@ header {
 	align-items: center;
 	align-content: center;
 }
-.name,
-.desc,
-.temp {
+.name-input,
+.desc-input,
+.temp-input {
 	margin-bottom: 0;
 }
 
