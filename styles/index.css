@@ -67,6 +67,39 @@ header {
 	padding: 0;
 }
 
+/* Section checking weather start */
+.input-weather {
+	width: 60%;
+	margin: 40px auto 0;
+	display: flex;
+	flex-direction: row;
+}
+.input-tx {
+	width: 70%;
+	padding: 5px;
+}
+.submit {
+	width: 30%;
+	padding: 5px;
+}
+.card-input-weather {
+	border: none;
+	width: 40%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.name,
+.desc,
+.temp {
+	margin-bottom: 0;
+}
+
+/* Section checking weather finish */
+
 /* Section Accommodation (3 cards) start */
 #accommodation {
 	margin: auto;
@@ -75,7 +108,11 @@ header {
 .fakeNavbar-Accommodation {
 	height: 120px;
 }
-
+.intro-accommodation {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
 .card {
 	border: #008ed6 1px solid;
 	width: 300px;
