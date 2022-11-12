@@ -21,7 +21,7 @@
 	height: 450px;
 	width: 100%;
 	margin: auto 0;
-	clip-path: ellipse(45% 39% at 51% 50%);
+	clip-path: ellipse(49% 37% at 50% 50%);
 }
 /* section accomodation end */
 
@@ -40,6 +40,7 @@ h4 {
 
 .container-weather-book {
 	width: 35%;
+	margin-right: 20px;
 }
 /* weather */
 .row-weather {
@@ -48,13 +49,17 @@ h4 {
 .card {
 	padding: 20px;
 }
+.card-title-weather {
+	margin-bottom: 20px;
+}
 .card-content-weather {
 	display: flex;
 	flex-direction: row;
 }
 /* book */
-.row-book {
-	margin-right: 20px;
+.middle-book {
+	display: flex;
+	justify-content: center;
 }
 .text-accomodation {
 	width: 182px;
@@ -74,10 +79,11 @@ select,
 	margin-bottom: 10px;
 }
 #Book {
-	margin-top: 40px;
+	margin-top: 5px;
 }
 /* right section: map */
 .container-map {
+	margin-left: 15px;
 	width: 65%;
 	padding-top: 30px;
 	background-color: rgb(245, 245, 245);
@@ -100,6 +106,7 @@ select,
 }
 #mapContainer {
 	padding: 5px;
+	margin-top: 40px;
 }
 /*!new section finish */
 /* Media query tablet start */

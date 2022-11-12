@@ -115,11 +115,13 @@ header {
 }
 .card {
 	border: #008ed6 1px solid;
-	width: 300px;
 }
 .card-text {
-	height: 144px;
-	font-size: 14px;
+	font-size: 12px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 .btn.bg-info:hover {
 	color: #fff;
@@ -135,7 +137,7 @@ header {
 }
 
 .ovalEffect {
-	clip-path: ellipse(50% 35% at 51% 48%);
+	clip-path: ellipse(52% 38% at 64% 50%);
 }
 
 /* Section Services end */
