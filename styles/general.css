@@ -5,6 +5,34 @@
 	letter-spacing: 0.1em;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+	overflow-x: hidden;
+}
+
+:root {
+	--black-color: #000000;
+	--cyan-color: #008ed6;
+	--bs-gray-500: #adb5bd;
+	--bs-gray-600: #6c757d;
+}
+/* navbar start */
+.fakeNavbar {
+	height: 60px;
+}
+.navbar {
+	width: 100vw;
+	border-bottom: #008ed6 3px solid;
+	opacity: 0.8;
+	z-index: 4;
+	height: 60px;
+}
+
+.navbar-nav {
+	padding-right: 10%;
+}
+
+/* navbar end */
+
 /*modal sign*/
 .modal-footer {
 	display: flex !important;
@@ -26,7 +54,12 @@
 .bi-person {
 	color: #fff;
 }
-.nav-item-userName {
+
+.account-set {
+	display: flex;
+	flex-direction: row;
+}
+#userNameNav {
 	color: aliceblue;
 	font-size: 16px;
 	font-weight: lighter;
@@ -39,4 +72,30 @@ canvas {
 	height: 58px;
 	margin-left: 5%;
 	border-radius: 5px;
+}
+
+/* !Media Quey tablet starts */
+@media screen and (max-width: 768px) {
+}
+/* !Media Quey tablet finish */
+
+/* !Media Quey phone starts */
+@media screen and (max-width: 414px) {
+	.fakeNavbar {
+		height: 80px;
+	}
+	.navbar {
+		height: 80px;
+	}
+	#navbarNav {
+		opacity: 2.6;
+	}
+	.account-set {
+		margin-top: 5%;
+		margin-left: 10%;
+		padding-bottom: 20px;
+	}
+	#userNameNav {
+		padding-left: 8px;
+	}
 }
