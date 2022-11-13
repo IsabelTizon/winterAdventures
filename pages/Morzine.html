@@ -367,42 +367,43 @@
 
 							<div id="jsPrices">
 								<img id="photo" src="../media/laTania-book/single.jpg" />
+								<div class="book-tablet">
+									<form id="booking" method="POST">
+										<input
+											type="text"
+											id="customername"
+											placeholder="Name"
+											autofocus
+											required
+										/>
+										<input
+											type="number"
+											id="nights"
+											placeholder="Number of nights"
+											min="1"
+											required
+										/>
 
-								<form id="booking" method="POST">
-									<input
-										type="text"
-										id="customername"
-										placeholder="Name"
-										autofocus
-										required
-									/>
-									<input
-										type="number"
-										id="nights"
-										placeholder="Number of nights"
-										min="1"
-										required
-									/>
+										<select id="roomType" name="roomType">
+											<option value="No">Select your room:</option>
+											<option value="Single">Single Room</option>
+											<option value="Twin">Twin</option>
+											<option value="Double">Double</option>
+											<option value="Superior">Superior Double</option>
+											<option value="Triple">Triple</option>
+										</select>
+									</form>
 
-									<select id="roomType" name="roomType">
-										<option value="No">Select your room:</option>
-										<option value="Single">Single Room</option>
-										<option value="Twin">Twin</option>
-										<option value="Double">Double</option>
-										<option value="Superior">Superior Double</option>
-										<option value="Triple">Triple</option>
-									</select>
-								</form>
-
-								<button
-									type="button"
-									id="Book"
-									class="btn btn-primary"
-									data-toggle="modal"
-									data-target="#exampleModal"
-								>
-									Book Now
-								</button>
+									<button
+										type="button"
+										id="Book"
+										class="btn btn-primary"
+										data-toggle="modal"
+										data-target="#exampleModal"
+									>
+										Book Now
+									</button>
+								</div>
 								<!-- Modal -->
 								<div
 									class="modal fade"
