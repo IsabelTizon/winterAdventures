@@ -81,10 +81,12 @@ select,
 #Book {
 	margin-top: 5px;
 }
-/* right section: map */
-.container-map {
-	margin-left: 15px;
+/* right section: map and equipment */
+.right-section {
 	width: 65%;
+	margin-left: 15px;
+}
+.container-map {
 	padding-top: 30px;
 	background-color: rgb(245, 245, 245);
 	border-radius: 20px;
@@ -98,16 +100,13 @@ select,
 .middle {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .bi-geo-alt {
 	font-size: 25px;
 	color: rgb(32, 32, 36);
 }
-#mapContainer {
-	padding: 5px;
-	margin-top: 40px;
-}
+
 /*!new section finish */
 /* Media query tablet start */
 @media only screen and (max-width: 900px) {
@@ -116,6 +115,29 @@ select,
 		width: 85%;
 	}
 	/* carousel end */
+}
+.go-packages {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+}
+.adv-equipment {
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+}
+.text-adv-equipment {
+	color: #008ed6;
+}
+.link-go-packages {
+	color: #000000;
+	text-decoration: none;
+}
+.link-go-packages:hover {
+	color: #008ed6;
+}
+.photo-adv-equipment {
+	border-radius: 10px;
 }
 /* Media query tablet end */
 
