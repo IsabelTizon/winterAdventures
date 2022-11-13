@@ -179,6 +179,9 @@ header {
 	.input-weather {
 		width: 90%;
 	}
+	.card-input-weather {
+		width: 83%;
+	}
 	.input-tx {
 		font-size: 12px;
 	}
