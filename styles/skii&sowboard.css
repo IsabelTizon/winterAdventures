@@ -933,6 +933,19 @@ h2 {
 		margin-top: 50px;
 		padding: 20px;
 	}
+	#jsPrices {
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+	}
+	#photo {
+		width: 100%;
+	}
+	.tablet-form {
+		width: 100%;
+		padding-top: 20px;
+		padding-left: 0;
+	}
 	/* Footer start */
 	.ski-footer {
 		margin-top: 300px;
