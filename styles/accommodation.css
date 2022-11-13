@@ -49,20 +49,44 @@ h4 {
 .card {
 	padding: 20px;
 }
-.card-title-weather {
-	margin-bottom: 20px;
+.card-desc-weather {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
 }
 .card-content-weather {
 	display: flex;
 	flex-direction: row;
 }
+#name {
+	font-size: 21px;
+}
+.temp {
+	padding-left: 0;
+}
+.temp,
+.desc {
+	font-size: 16px;
+	width: 100px;
+	padding-top: 20px;
+}
+img.icon {
+	width: 130px;
+	height: 150px;
+}
 /* book */
+#jsPrices {
+	display: flex;
+	flex-direction: column;
+}
 .middle-book {
 	display: flex;
 	justify-content: center;
 }
 .text-accomodation {
-	width: 182px;
+	width: 55%;
+	margin: auto;
+	font-size: 21px;
 }
 #photo {
 	width: 100%;
@@ -77,9 +101,15 @@ select,
 	width: 100%;
 	height: 40px;
 	margin-bottom: 10px;
+	font-size: 16px;
+	padding-left: 20px;
 }
 #Book {
 	margin-top: 5px;
+}
+.book-tablet {
+	padding-top: 10px;
+	padding-left: 0;
 }
 /* right section: map and equipment */
 .right-section {
@@ -90,6 +120,10 @@ select,
 	padding-top: 30px;
 	background-color: rgb(245, 245, 245);
 	border-radius: 20px;
+}
+#mapContainer {
+	width: 87vw;
+	height: 60vh;
 }
 .address-accommodation {
 	display: flex;
@@ -106,8 +140,35 @@ select,
 	font-size: 25px;
 	color: rgb(32, 32, 36);
 }
-/*!new section finish */
+/* equipment */
+.go-packages {
+	display: flex;
+	flex-direction: row;
+}
 
+.adv-equipment {
+	width: 80%;
+	padding: 20px;
+}
+.text-adv-equipment {
+	font-size: 21px;
+	color: #008ed6;
+}
+.link-go-packages {
+	font-size: 16px;
+	text-decoration: none;
+	color: #000000;
+}
+.link-go-packages:hover {
+	color: #68024e;
+}
+.photo-adv-equipment {
+	width: 292px;
+	height: 180px;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+/*!new section finish */
 /* ! Media query tablet start */
 @media only screen and (max-width: 768px) {
 	/* carousel start */
@@ -115,148 +176,147 @@ select,
 		width: 85%;
 	}
 	/* carousel end */
-}
-.go-packages {
-	display: flex;
-	flex-direction: row;
-	margin-top: 30px;
-}
-.adv-equipment {
-	display: flex;
-	flex-direction: column;
-	margin-left: 40px;
-}
-.text-adv-equipment {
-	color: #008ed6;
-}
-.link-go-packages {
-	color: #000000;
-	text-decoration: none;
-}
-.link-go-packages:hover {
-	color: #008ed6;
-}
-.photo-adv-equipment {
-	border-radius: 10px;
-}
+	.go-packages {
+		display: flex;
+		flex-direction: row;
+		margin-top: 30px;
+	}
+	.adv-equipment {
+		display: flex;
+		flex-direction: column;
+		margin-left: 40px;
+	}
+	.text-adv-equipment {
+		color: #008ed6;
+	}
+	.link-go-packages {
+		color: #000000;
+		text-decoration: none;
+	}
+	.link-go-packages:hover {
+		color: #008ed6;
+	}
+	.photo-adv-equipment {
+		border-radius: 10px;
+	}
 
-/* new section start */
-/* new section weather */
-.new-section {
-	width: 85%;
-	flex-direction: column;
-}
-.container-weather-book {
-	width: 100%;
-	margin-right: 0;
-}
-.card {
-	width: 100%;
-	margin: 0;
-}
-.card-desc-weather {
-	display: flex;
-	flex-direction: row;
-	width: 50%;
-}
-#name {
-	font-size: 36px;
-}
-.temp {
-	padding-left: 50px;
-}
-.temp,
-.desc {
-	font-size: 20px;
-	width: 200px;
-	padding-top: 50px;
-}
-img.icon {
-	width: 200px !important;
-	height: 150px !important;
-}
-/* new section booking */
-.text-accomodation {
-	width: 75%;
-	margin: auto;
-	font-size: 30px;
-}
-input,
-select,
-#Book {
-	height: 50px;
-	margin-bottom: 15px;
-	padding-left: 20px;
-	font-size: 20px;
-}
-#jsPrices {
-	display: flex;
-	flex-direction: row;
-}
-.book-tablet {
-	padding-top: 20px;
-	padding-left: 20px;
-}
-#Book {
-	margin-bottom: 0;
-}
-#photo {
-	width: 50%;
-}
-/* new section map */
-.right-section {
-	width: 100%;
-	margin-left: 0;
-}
-.address-accommodation {
-	width: 80%;
-}
-#mapContainer {
-	margin: 0 !important;
-	width: 650px !important;
-}
-.map-title {
-	font-size: 25px;
-}
-.map-tx {
-	font-size: 20px;
-}
-element.style {
-	width: 65vw !important;
-	height: 75vh !important;
-}
-canvas {
-	margin-left: 0 !important;
-}
-/* new section equipment advertisement  */
-.go-packages {
-	flex-direction: row;
-	margin-top: 50px;
-}
-.adv-equipment {
-	width: 80%;
-	margin: 0 auto 30px;
-}
-.text-adv-equipment {
-	font-size: 25px;
-}
+	/* new section start */
+	/* new section weather */
+	.new-section {
+		width: 85%;
+		flex-direction: column;
+	}
+	.container-weather-book {
+		width: 100%;
+		margin-right: 0;
+	}
+	.card {
+		width: 100%;
+		margin: 0;
+	}
+	.card-desc-weather {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+	}
+	#name {
+		font-size: 36px;
+	}
+	.temp {
+		padding-left: 50px;
+	}
+	.temp,
+	.desc {
+		font-size: 20px;
+		width: 200px;
+		padding-top: 50px;
+	}
+	img.icon {
+		width: 200px;
+		height: 150px;
+	}
+	/* new section booking */
+	.text-accomodation {
+		width: 75%;
+		margin: auto;
+		font-size: 30px;
+	}
+	input,
+	select,
+	#Book {
+		height: 50px;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		font-size: 20px;
+	}
+	#jsPrices {
+		display: flex;
+		flex-direction: row;
+	}
+	.book-tablet {
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	#Book {
+		margin-bottom: 0;
+	}
+	#photo {
+		width: 50%;
+	}
+	/* new section map */
+	.right-section {
+		width: 100%;
+		margin-left: 0;
+	}
+	.address-accommodation {
+		width: 80%;
+	}
+	#mapContainer {
+		margin: 0;
+		width: 650px;
+	}
+	.map-title {
+		font-size: 25px;
+	}
+	.map-tx {
+		font-size: 20px;
+	}
+	element.style {
+		width: 65vw;
+		height: 75vh;
+	}
+	canvas {
+		margin-left: 0;
+	}
+	/* new section equipment advertisement  */
+	.go-packages {
+		flex-direction: row;
+		margin-top: 50px;
+	}
+	.adv-equipment {
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+	.text-adv-equipment {
+		font-size: 25px;
+	}
 
-.link-go-packages {
-	font-size: 20px;
+	.link-go-packages {
+		font-size: 20px;
+	}
+	/* new section end */
+	/* !Media query tablet end */
 }
-/* new section end */
-/* !Media query tablet end */
-
 /* !Media query Mobile start */
 @media only screen and (max-width: 414px) {
 	/* carousel start */
 	.myCarouselWinterAdventures {
 		height: 350px;
-		margin: 0 !important;
-		width: 100vw !important;
+		margin: 0;
+		width: 100vw;
 	}
 	.title-carousel {
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 
 	#tignesCarousel,
@@ -267,7 +327,7 @@ canvas {
 
 	/* section services start */
 	.section-services.mt-5 {
-		margin-top: 0 !important;
+		margin-top: 0;
 	}
 	/* section services end*/
 
@@ -287,44 +347,72 @@ canvas {
 		width: 100%;
 		margin-right: 0;
 	}
+	.card-desc-weather {
+		display: flex;
+		flex-direction: column;
+	}
+	.temp,
+	.desc {
+		font-size: 20px;
+		padding-top: 10px;
+	}
+	.card-title-weather {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
 	.card {
 		width: 100%;
 	}
 	#name {
-		font-size: 36px;
+		font-size: 26px;
 	}
 	.temp,
 	.desc {
 		font-size: 20px;
 	}
+	.temp {
+		padding-left: 10px;
+	}
 	img.icon {
-		width: 200px !important;
-		height: 150px !important;
+		width: 150px;
+		height: 120px;
 	}
 	/* new section booking */
 	.text-accomodation {
 		width: 280px;
 		font-size: 30px;
 	}
+	#jsPrices {
+		display: flex;
+		flex-direction: column;
+	}
+	.book-tablet {
+		padding-top: 0;
+		padding-left: 0;
+	}
+	#photo {
+		width: 100%;
+	}
 	input,
 	select,
 	#Book {
 		height: 50px;
 		margin-bottom: 15px;
-		padding-left: 20px;
+		padding-left: 10px;
 		font-size: 20px;
 	}
 	/* new section map */
 	.right-section {
 		width: 100%;
 		margin-left: 0;
+		margin-top: 50px;
 	}
 	.address-accommodation {
 		width: 80%;
 	}
 	#mapContainer {
-		margin: 0 !important;
-		width: 350px !important;
+		margin: 0;
+		width: 350px;
 	}
 	.map-title {
 		font-size: 25px;
@@ -333,11 +421,11 @@ canvas {
 		font-size: 20px;
 	}
 	element.style {
-		width: 70vw !important;
-		height: 45vh !important;
+		width: 70vw;
+		height: 45vh;
 	}
 	canvas {
-		margin: 0 !important;
+		margin: 0;
 	}
 	/* new section equipment advertisement  */
 	.go-packages {
@@ -345,16 +433,20 @@ canvas {
 		margin-top: 50px;
 	}
 	.adv-equipment {
-		width: 80%;
-		margin: 0 auto 30px;
+		width: 90%;
+		margin: 0;
 	}
 	.text-adv-equipment {
 		font-size: 25px;
 	}
-
 	.link-go-packages {
 		font-size: 20px;
 	}
+	.photo-adv-equipment {
+		width: 100%;
+		height: 250px;
+	}
+
 	/* new section end */
 }
 /* Media query Mobile end */
