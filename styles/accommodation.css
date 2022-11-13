@@ -214,11 +214,17 @@ select,
 		margin-left: 0;
 	}
 	.address-accommodation {
-		width: 60%;
+		width: 80%;
 	}
 	#mapContainer {
 		margin: 0 !important;
 		width: 350px !important;
+	}
+	.map-title {
+		font-size: 25px;
+	}
+	.map-tx {
+		font-size: 20px;
 	}
 	element.style {
 		width: 70vw !important;
@@ -226,6 +232,22 @@ select,
 	}
 	canvas {
 		margin: 0 !important;
+	}
+	/* new section equipment advertisement  */
+	.go-packages {
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.adv-equipment {
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+	.text-adv-equipment {
+		font-size: 25px;
+	}
+
+	.link-go-packages {
+		font-size: 20px;
 	}
 	/* new section end */
 }
