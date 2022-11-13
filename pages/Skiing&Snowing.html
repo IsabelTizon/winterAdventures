@@ -232,56 +232,57 @@
 									src="../media/skii&Snowing/packages-prices/none.jpg"
 									alt="package's type image"
 								/>
+								<div class="tablet-form">
+									<form id="booking" method="POST">
+										<input
+											type="text"
+											id="customername"
+											placeholder="Name"
+											autofocus
+											required
+										/>
+										<input
+											type="number"
+											id="people"
+											placeholder="Number of people"
+											min="1"
+											required
+										/>
 
-								<form id="booking" method="POST">
-									<input
-										type="text"
-										id="customername"
-										placeholder="Name"
-										autofocus
-										required
-									/>
-									<input
-										type="number"
-										id="people"
-										placeholder="Number of people"
-										min="1"
-										required
-									/>
+										<select id="packageType" name="packageType">
+											<option value="No">Select your package</option>
+											<option value="Economy-ski-boots-poles">
+												Economy-ski-boots-poles
+											</option>
+											<option value="Economy-snowboard-boots">
+												Economy-snowboard-boots
+											</option>
+											<option value="Intermediate-ski-boots-poles">
+												Intermediate-ski-boots-poles
+											</option>
+											<option value="Intermediate-snowboard-boots">
+												Intermediate-snowboard-boots
+											</option>
+											<option value="Performance-ski-boots-poles">
+												Performance-ski-boots-poles
+											</option>
+											<option value="Performance-snowboard-boots">
+												Performance-snowboard-boots
+											</option>
+										</select>
+									</form>
 
-									<select id="packageType" name="packageType">
-										<option value="No">Select your package</option>
-										<option value="Economy-ski-boots-poles">
-											Economy-ski-boots-poles
-										</option>
-										<option value="Economy-snowboard-boots">
-											Economy-snowboard-boots
-										</option>
-										<option value="Intermediate-ski-boots-poles">
-											Intermediate-ski-boots-poles
-										</option>
-										<option value="Intermediate-snowboard-boots">
-											Intermediate-snowboard-boots
-										</option>
-										<option value="Performance-ski-boots-poles">
-											Performance-ski-boots-poles
-										</option>
-										<option value="Performance-snowboard-boots">
-											Performance-snowboard-boots
-										</option>
-									</select>
-								</form>
+									<button
+										type="button"
+										id="Book"
+										class="btn btn-primary"
+										data-toggle="modal"
+										data-target="#exampleModal"
+									>
+										Book Now
+									</button>
+								</div>
 
-								<!-- <button id="Book">Book Now</button> -->
-								<button
-									type="button"
-									id="Book"
-									class="btn btn-primary"
-									data-toggle="modal"
-									data-target="#exampleModal"
-								>
-									Book Now
-								</button>
 								<!-- Modal -->
 								<div
 									class="modal fade"

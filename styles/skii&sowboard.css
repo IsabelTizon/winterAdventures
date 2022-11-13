@@ -460,7 +460,7 @@ h2 {
 
 /* Section: forfaits end */
 
-/* Media query tablet start */
+/* ! Media query tablet start */
 @media only screen and (max-width: 768px) {
 	/* header - movie start */
 	header {
@@ -518,8 +518,16 @@ h2 {
 	.img-luxury-carousel {
 		height: 401px;
 	}
+
+	h2.luxury-title {
+		margin-bottom: 0;
+	}
+	.luxury-text {
+		width: 90% !important;
+		padding: 0;
+	}
 	.luxury-p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	/* Luxury section end */
 
@@ -579,7 +587,41 @@ h2 {
 	.card-text {
 		font-size: 15px;
 	}
-
+	/* Equipment start */
+	#carousel-web {
+		display: none;
+	}
+	.card-equipment-phone.bg-light {
+		width: 50%;
+		height: 450px;
+		margin: auto;
+		background-color: rgb(255, 255, 255) !important;
+	}
+	.phones-cards {
+		width: 100% !important;
+		margin: auto;
+		display: block;
+		padding: 0;
+	}
+	.row.d-flex.forfaits-title.d-flex.justify-content-center {
+		display: flex;
+		flex-direction: row;
+	}
+	.card-img-top-phone {
+		height: 200px;
+		width: 100%;
+	}
+	.card-body-phone {
+		height: 200px;
+	}
+	.card-title-phone {
+		padding-top: 10px;
+	}
+	.card-text-phone {
+		width: 100%;
+		padding: 10px 0;
+	}
+	/* Equipment end */
 	/* equipment section end */
 
 	/* Section: forfaits start */
@@ -600,118 +642,50 @@ h2 {
 		width: 90%;
 	}
 	/* Section: forfaits end */
-}
-/*! Tablet start */
 
-@media only screen and (max-width: 768px) {
-	/* Luxury start */
-	h2.luxury-title {
-		margin-bottom: 0;
-	}
-	.luxury-text {
-		width: 90% !important;
-		padding: 0;
-	}
-	.luxury-p {
-		font-size: 16px;
-	}
-	/* Luxury start */
-
-	/* Equipment start */
-	#carousel-web {
-		display: none;
-	}
-	.card-equipment-phone.bg-light {
-		height: 450px;
-		padding-left: 30px;
-		padding-right: 30px;
-		background-color: rgb(255, 255, 255) !important;
-	}
-	.phones-cards {
-		width: 85% !important;
-		margin: auto;
-		display: block;
-		padding: 0;
-	}
-	.card-img-top-phone {
-		height: 200px;
-		width: 100%;
-	}
-	.card-body-phone {
-		height: 200px;
-	}
-	.card-title-phone {
-		padding-top: 10px;
-	}
-	.card-text-phone {
-		width: 100%;
-		padding: 10px 0;
-	}
-	#carousel-web {
-		display: none;
-	}
-	.card-equipment-phone.bg-light {
-		height: 450px;
-		padding-left: 30px;
-		padding-right: 30px;
-		background-color: rgb(255, 255, 255) !important;
-	}
-	.phones-cards {
-		width: 100%;
-		margin: auto;
-		display: block;
-		padding: 0;
-	}
-
-	.card-img-top-phone {
-		height: 200px;
-		width: 100%;
-	}
-	.card-body-phone {
-		height: 200px;
-	}
-	.card-title-phone {
-		padding-top: 10px;
-	}
-	.card-text-phone {
-		width: 100%;
-		padding: 10px 0;
-	}
-	/* Equipment end */
 	/* new section start */
 	.container-packages-top {
-		width: 90%;
+		width: 85%;
 	}
-	.packages-title {
-		letter-spacing: 3px;
-		padding: 20px 0 40px;
+	.container-table-jsPrices {
+		flex-direction: column;
+		margin-bottom: 50px;
 	}
-	.container-table-text {
-		width: 60%;
-	}
-	.strong-line {
-		margin-bottom: 10px;
+	/* table */
+	.table-packages {
+		width: 100%;
 	}
 	.right-prices {
-		width: 40%;
-		margin-left: 0;
-		padding: 10px;
+		width: 100%;
+		margin: 40px auto;
+		padding: 20px;
 	}
-	.booking-title {
+	#jsPrices {
+		display: flex;
+		flex-direction: row;
 		padding-top: 20px;
 	}
+	#booking {
+		display: flex;
+		flex-direction: column;
+	}
 	#photo {
-		height: 400px;
-		padding-top: 30px;
-		padding-bottom: 40px;
+		width: 50%;
 	}
-	input,
-	select,
-	#Book {
-		height: 50px;
-		margin-bottom: 15px;
+	.tablet-form {
+		width: 50%;
+		padding-top: 20px;
+		padding-left: 20px;
 	}
-	/* new section ends */
+	/* new section equipment */
+	.container-table-text {
+		width: 100%;
+		margin-right: 0;
+	}
+	.discount-description {
+		margin-top: 24px;
+	}
+	/* new section booking */
 }
 /*! Tablet end */
 
