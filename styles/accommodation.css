@@ -208,6 +208,25 @@ select,
 		padding-left: 20px;
 		font-size: 20px;
 	}
+	/* new section map */
+	.right-section {
+		width: 100%;
+		margin-left: 0;
+	}
+	.address-accommodation {
+		width: 60%;
+	}
+	#mapContainer {
+		margin: 0 !important;
+		width: 350px !important;
+	}
+	element.style {
+		width: 70vw !important;
+		height: 45vh !important;
+	}
+	canvas {
+		margin: 0 !important;
+	}
 	/* new section end */
 }
 /* Media query Mobile end */
