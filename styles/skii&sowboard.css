@@ -242,7 +242,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	font-weight: 500;
 }
 .img-luxury-carousel {
-	height: 401px;
+	height: 434px;
 }
 /* Luxury section end */
 
@@ -255,7 +255,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	max-width: 1140px;
 }
 .holidays-info {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 }
 .holidays-title {
@@ -306,14 +306,14 @@ h2 {
 
 /* equipment section start */
 #equipment {
-	width: 100%;
+	width: 80%;
 	margin: auto;
 	padding: 80px 0 0 0;
 }
 
 .card-equipment {
 	width: 70%;
-	height: 450px;
+
 	border-radius: 5px;
 	border-color: #008ed6;
 }
@@ -335,12 +335,26 @@ h2 {
 	display: none;
 }
 .card-text {
-	margin-bottom: 5px;
-	height: 120px;
+	font-size: 14px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.btn.bg-info {
+	width: 100%;
 }
 .btn.bg-info:hover {
 	color: #fff;
-	font-size: 20px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	display: inline-block;
+	width: 1rem;
+	height: 2rem;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 100% 100%;
 }
 /* equipment section end */
 
@@ -355,10 +369,6 @@ h2 {
 	margin: auto;
 }
 
-.forfaits-text {
-	margin: auto;
-	width: 80%;
-}
 .handmade-forfaits {
 	margin: auto;
 
@@ -508,7 +518,7 @@ h2 {
 	}
 	/* Luxury section end */
 
-	/* holidays section start */
+	/* holiday section start */
 	#holidays,
 	#equipment,
 	#forfaits {
@@ -520,7 +530,7 @@ h2 {
 		padding: 0;
 	}
 	.holidays-info {
-		width: 80% !important;
+		width: 90% !important;
 	}
 	.holidays-text.my-5 {
 		width: 100% !important;
@@ -558,7 +568,6 @@ h2 {
 	}
 	.card-equipment {
 		width: 75%;
-		height: 450px;
 		border-radius: 5px;
 		border-color: blue;
 	}
