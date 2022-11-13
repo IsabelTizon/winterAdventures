@@ -152,11 +152,14 @@ select,
 }
 #mapContainer {
 	margin: 0 !important;
+	width: 47vw;
+	height: 52vh;
 }
 element.style {
-	width: 70vw !important;
-	height: 52vh !important;
+	width: 100vw !important;
+	height: 96vh !important;
 }
+
 /* equipment */
 .adv-equipment {
 	margin-left: 9px;
