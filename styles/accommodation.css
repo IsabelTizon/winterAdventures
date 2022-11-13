@@ -109,7 +109,7 @@ select,
 
 /*!new section finish */
 /* Media query tablet start */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
 	/* carousel start */
 	.myCarouselWinterAdventures {
 		width: 85%;
@@ -142,7 +142,7 @@ select,
 /* Media query tablet end */
 
 /* Media query Mobile start */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
 	/* carousel start */
 	.myCarouselWinterAdventures {
 		height: 350px;
@@ -170,5 +170,44 @@ select,
 		max-width: 90%;
 	}
 	/* section accomodation end */
+
+	/* new section start */
+	/* new section weather */
+	.new-section {
+		width: 85%;
+		flex-direction: column;
+	}
+	.container-weather-book {
+		width: 100%;
+		margin-right: 0;
+	}
+	.card {
+		width: 100%;
+	}
+	#name {
+		font-size: 36px;
+	}
+	.temp,
+	.desc {
+		font-size: 20px;
+	}
+	img.icon {
+		width: 220px !important;
+		height: 150px !important;
+	}
+	/* new section booking */
+	.text-accomodation {
+		width: 280px;
+		font-size: 30px;
+	}
+	input,
+	select,
+	#Book {
+		height: 50px;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		font-size: 20px;
+	}
+	/* new section end */
 }
 /* Media query Mobile end */
