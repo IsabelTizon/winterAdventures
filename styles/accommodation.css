@@ -107,7 +107,8 @@ select,
 	color: rgb(32, 32, 36);
 }
 /*!new section finish */
-/* Media query tablet start */
+
+/* ! Media query tablet start */
 @media only screen and (max-width: 768px) {
 	/* carousel start */
 	.myCarouselWinterAdventures {
@@ -140,34 +141,110 @@ select,
 }
 
 /* new section start */
+/* new section weather */
 .new-section {
-	width: 90%;
-	/* margin: 20px auto;
-    display: flex;
-    flex-direction: row; */
+	width: 85%;
+	flex-direction: column;
 }
-/* map */
+.container-weather-book {
+	width: 100%;
+	margin-right: 0;
+}
+.card {
+	width: 100%;
+	margin: 0;
+}
+.card-desc-weather {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+#name {
+	font-size: 36px;
+}
+.temp {
+	padding-left: 50px;
+}
+.temp,
+.desc {
+	font-size: 20px;
+	width: 200px;
+	padding-top: 50px;
+}
+img.icon {
+	width: 200px !important;
+	height: 150px !important;
+}
+/* new section booking */
+.text-accomodation {
+	width: 75%;
+	margin: auto;
+	font-size: 30px;
+}
+input,
+select,
+#Book {
+	height: 50px;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+#jsPrices {
+	display: flex;
+	flex-direction: row;
+}
+.book-tablet {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+#Book {
+	margin-bottom: 0;
+}
+#photo {
+	width: 50%;
+}
+/* new section map */
+.right-section {
+	width: 100%;
+	margin-left: 0;
+}
 .address-accommodation {
-	width: 70%;
+	width: 80%;
 }
 #mapContainer {
 	margin: 0 !important;
-	width: 47vw;
-	height: 52vh;
+	width: 650px !important;
+}
+.map-title {
+	font-size: 25px;
+}
+.map-tx {
+	font-size: 20px;
 }
 element.style {
-	width: 100vw !important;
-	height: 96vh !important;
+	width: 65vw !important;
+	height: 75vh !important;
+}
+canvas {
+	margin-left: 0 !important;
+}
+/* new section equipment advertisement  */
+.go-packages {
+	flex-direction: row;
+	margin-top: 50px;
+}
+.adv-equipment {
+	width: 80%;
+	margin: 0 auto 30px;
+}
+.text-adv-equipment {
+	font-size: 25px;
 }
 
-/* equipment */
-.adv-equipment {
-	margin-left: 9px;
+.link-go-packages {
+	font-size: 20px;
 }
-.photo-adv-equipment {
-	width: 45%;
-}
-/* new section ends */
+/* new section end */
 /* !Media query tablet end */
 
 /* !Media query Mobile start */
