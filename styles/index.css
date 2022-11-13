@@ -128,16 +128,26 @@ header {
 /* Section Contact end */
 
 /* ! Media query tablet start */
-@media only screen and (max-width: 900px) {
-	/* Navbar start */
-	.navbar-brand {
-		padding-left: 5%;
+@media only screen and (max-width: 768px) {
+	/* input weather start  */
+	.input-weather {
+		width: 90%;
 	}
-	/* Navbar end */
+	.card-input-weather {
+		width: 83%;
+	}
+	.input-tx {
+		font-size: 20px;
+		padding-left: 20px;
+	}
+	/* input weather finish  */
 
 	/* section services start */
 	.myCarouselWinterAdventures {
 		width: 85%;
+	}
+	.ovalEffect {
+		clip-path: ellipse(44% 38% at 51% 47%);
 	}
 	/* section services end */
 
@@ -160,7 +170,7 @@ header {
 /* !Media query tablet end */
 
 /* ! Media query Mobile start */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
 	/* header start */
 	header {
 		height: calc(100vh);

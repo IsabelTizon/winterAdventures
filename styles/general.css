@@ -113,6 +113,56 @@ canvas {
 
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
+	/* navbar mobile */
+	.fakeNavbar {
+		height: 90px;
+	}
+	.navbar {
+		height: 90px;
+	}
+	#navbarNav {
+		margin-top: 3%;
+		background: var(--black-color);
+		opacity: 2.6;
+	}
+	.nav-link {
+		margin-top: 5%;
+		margin-left: 10%;
+		font-size: 20px;
+	}
+	.account-set {
+		margin-top: 5%;
+		margin-left: 10%;
+		padding-bottom: 20px;
+	}
+	#userNameNav {
+		padding-left: 8px;
+		font-size: 20px;
+	}
+	.navbar-toggler {
+		margin-right: 5%;
+	}
+	.container-fluid {
+		padding: 0 !important;
+	}
+
+	/* footer mobile */
+	footer {
+		display: flex;
+		flex-direction: row;
+		padding: 40px;
+	}
+	.right-footer {
+		padding-top: 15px;
+	}
+	/* Footer start */
+	.my-footer.bg-dark {
+		height: 150px;
+
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
 }
 /* !Media Quey tablet finish */
 

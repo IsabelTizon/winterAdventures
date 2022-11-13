@@ -600,7 +600,7 @@ h2 {
 	}
 	/* Section: forfaits end */
 }
-/* Media query tablet end */
+/*! Tablet start */
 
 @media only screen and (max-width: 768px) {
 	/* Luxury start */
@@ -676,7 +676,9 @@ h2 {
 	}
 	/* Equipment end */
 }
-/* Media query Mobile start */
+/*! Tablet end */
+
+/*! Mobile start */
 @media only screen and (max-width: 414px) {
 	/* header */
 	header {
@@ -926,5 +928,5 @@ h2 {
 	}
 	/* Footer end */
 
-	/* Media query Mobile end */
+	/*! Mobile end */
 }
