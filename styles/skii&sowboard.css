@@ -460,7 +460,7 @@ h2 {
 /* Section: forfaits end */
 
 /* Media query tablet start */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 764px) {
 	/* header - movie start */
 	header {
 		height: calc(100vh - 80px);
@@ -677,7 +677,7 @@ h2 {
 	/* Equipment end */
 }
 /* Media query Mobile start */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
 	/* header */
 	header {
 		height: calc(100vh - 80px);
@@ -787,8 +787,9 @@ h2 {
 	.container.mb-5 {
 		width: 95% !important;
 	}
-	h2 {
-		font-family: "Source Serif Pro", serif;
+	h2.title-second-section {
+		width: 80%;
+		margin: auto;
 		font-weight: 700;
 	}
 	.container.mb-5 {
@@ -894,7 +895,29 @@ h2 {
 		height: 300px;
 	}
 	/* Section: forfaits end */
-
+	/* new section start */
+	.container-packages-top {
+		width: 90%;
+	}
+	.container-table-jsPrices {
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+	/* new section equipment */
+	.container-table-text {
+		width: 100%;
+		margin-right: 0;
+	}
+	.discount-description {
+		margin-top: 24px;
+	}
+	/* new section booking */
+	.right-prices {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 50px;
+		padding: 20px;
+	}
 	/* Footer start */
 	.ski-footer {
 		margin-top: 300px;
