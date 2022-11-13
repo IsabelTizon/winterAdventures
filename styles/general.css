@@ -73,6 +73,43 @@ canvas {
 	margin-left: 5%;
 	border-radius: 5px;
 }
+/* Footer start */
+.my-footer.bg-dark {
+	color: var(--bs-gray-500);
+	line-height: 1.5;
+
+	height: 80px;
+	width: 100vw;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.my-footer a {
+	text-decoration: none;
+	color: var(--bs-gray-500);
+}
+.my-footer:hover a {
+	text-decoration: none;
+	color: var(--cyan-color);
+}
+.icon {
+	height: 30px;
+	width: 40px;
+	padding-right: 10px;
+}
+.social-media {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Footer end */
 
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
@@ -81,6 +118,7 @@ canvas {
 
 /* !Media Quey phone starts */
 @media screen and (max-width: 414px) {
+	/* navbar mobile */
 	.fakeNavbar {
 		height: 80px;
 	}
@@ -88,7 +126,13 @@ canvas {
 		height: 80px;
 	}
 	#navbarNav {
+		margin-top: 3%;
+		background: var(--black-color);
 		opacity: 2.6;
+	}
+	.nav-link {
+		margin-top: 5%;
+		margin-left: 10%;
 	}
 	.account-set {
 		margin-top: 5%;
@@ -97,5 +141,29 @@ canvas {
 	}
 	#userNameNav {
 		padding-left: 8px;
+	}
+	.navbar-toggler {
+		margin-right: 5%;
+	}
+	.container-fluid {
+		padding: 0 !important;
+	}
+
+	/* footer mobile */
+	footer {
+		display: flex;
+		flex-direction: row;
+		padding: 40px;
+	}
+	.right-footer {
+		padding-top: 15px;
+	}
+	/* Footer start */
+	.my-footer.bg-dark {
+		height: 150px;
+
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
 	}
 }
