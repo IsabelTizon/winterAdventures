@@ -408,8 +408,8 @@ select,
 		width: 80%;
 	}
 	#mapContainer {
-		margin: 0;
-		width: 350px;
+		width: 85vw;
+		height: 45vh;
 	}
 	.map-title {
 		font-size: 25px;
@@ -417,13 +417,6 @@ select,
 	.map-tx {
 		font-size: 20px;
 	}
-	element.style {
-		width: 70vw;
-		height: 45vh;
-	}
-	/* canvas {
-		margin: 0;
-	} */
 	/* new section equipment advertisement  */
 	.go-packages {
 		flex-direction: column;
