@@ -106,7 +106,6 @@ select,
 	font-size: 25px;
 	color: rgb(32, 32, 36);
 }
-
 /*!new section finish */
 /* Media query tablet start */
 @media only screen and (max-width: 768px) {
@@ -139,9 +138,36 @@ select,
 .photo-adv-equipment {
 	border-radius: 10px;
 }
-/* Media query tablet end */
 
-/* Media query Mobile start */
+/* new section start */
+.new-section {
+	width: 90%;
+	/* margin: 20px auto;
+    display: flex;
+    flex-direction: row; */
+}
+/* map */
+.address-accommodation {
+	width: 70%;
+}
+#mapContainer {
+	margin: 0 !important;
+}
+element.style {
+	width: 70vw !important;
+	height: 52vh !important;
+}
+/* equipment */
+.adv-equipment {
+	margin-left: 9px;
+}
+.photo-adv-equipment {
+	width: 45%;
+}
+/* new section ends */
+/* !Media query tablet end */
+
+/* !Media query Mobile start */
 @media only screen and (max-width: 414px) {
 	/* carousel start */
 	.myCarouselWinterAdventures {

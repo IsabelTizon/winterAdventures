@@ -460,7 +460,7 @@ h2 {
 /* Section: forfaits end */
 
 /* Media query tablet start */
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: 768px) {
 	/* header - movie start */
 	header {
 		height: calc(100vh - 80px);
@@ -675,6 +675,7 @@ h2 {
 		padding: 10px 0;
 	}
 	/* Equipment end */
+
 }
 /*! Tablet end */
 
