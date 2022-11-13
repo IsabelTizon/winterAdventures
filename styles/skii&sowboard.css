@@ -763,7 +763,9 @@ h2 {
 	#carouselLuxuryControls {
 		grid-area: 2/1/-1/-1;
 	}
-
+	.luxury-p {
+		font-size: 16px;
+	}
 	.luxury-text {
 		width: 90%;
 		margin: auto;
