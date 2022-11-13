@@ -122,7 +122,7 @@ select,
 	border-radius: 20px;
 }
 #mapContainer {
-	width: 87vw;
+	width: 47vw;
 	height: 60vh;
 }
 .address-accommodation {
@@ -272,8 +272,8 @@ select,
 		width: 80%;
 	}
 	#mapContainer {
-		margin: 0;
-		width: 650px;
+		width: 85vw;
+		height: 90vh;
 	}
 	.map-title {
 		font-size: 25px;
@@ -281,10 +281,7 @@ select,
 	.map-tx {
 		font-size: 20px;
 	}
-	element.style {
-		width: 65vw;
-		height: 75vh;
-	}
+
 	canvas {
 		margin-left: 0;
 	}
@@ -424,9 +421,9 @@ select,
 		width: 70vw;
 		height: 45vh;
 	}
-	canvas {
+	/* canvas {
 		margin: 0;
-	}
+	} */
 	/* new section equipment advertisement  */
 	.go-packages {
 		flex-direction: column;
