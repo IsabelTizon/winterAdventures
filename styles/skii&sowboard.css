@@ -75,6 +75,10 @@ tr {
 }
 .row-package-type {
 	width: 25%;
+	padding: 13px;
+}
+.row-top {
+	background-color: rgb(244, 244, 244);
 }
 .row-package-prices {
 	width: 35%;
