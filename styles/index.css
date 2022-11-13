@@ -175,6 +175,15 @@ header {
 	}
 	/* header end */
 
+	/* input weather start  */
+	.input-weather {
+		width: 90%;
+	}
+	.input-tx {
+		font-size: 12px;
+	}
+	/* input weather finish  */
+
 	/* Section Accommodation (3 cards) start */
 	#accommodation {
 		max-width: 90% !important;
@@ -196,6 +205,9 @@ header {
 	/* Section Accommodation (3 cards) end */
 
 	/* Section Services start */
+	#services {
+		max-width: 80%;
+	}
 	.py-5 {
 		padding: 0 !important;
 	}
@@ -209,7 +221,14 @@ header {
 		padding-right: 0 !important;
 		padding-left: 0 !important;
 	}
+	.ovalEffect {
+		clip-path: ellipse(52% 38% at 64% 50%);
+	}
+	.circle-image {
+		width: 280px !important;
+	}
 	/* Section Services end */
+
 	.py-5.myContact-Title-Mobile {
 		padding: 50px 0 20px 0 !important;
 	}
