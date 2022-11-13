@@ -222,11 +222,9 @@ header {
 		padding-left: 0 !important;
 	}
 	.ovalEffect {
-		clip-path: ellipse(52% 38% at 64% 50%);
+		clip-path: ellipse(44% 36% at 50% 46%);
 	}
-	.circle-image {
-		width: 280px !important;
-	}
+
 	/* Section Services end */
 
 	.py-5.myContact-Title-Mobile {
