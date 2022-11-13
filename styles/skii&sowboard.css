@@ -171,7 +171,7 @@ select,
 }
 .hide {
 	color: var(--cyan-color);
-	font-size: 2rem;
+	font-size: 1.2rem;
 	border: var(--cyan-color) solid 3px;
 	border-radius: 5px;
 	padding: 10px;
