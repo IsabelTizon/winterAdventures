@@ -16,22 +16,10 @@
 			type="text/css"
 			href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
 		/>
-		<script
-			type="text/javascript"
-			src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
-		></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
 		<!-- HERE JavaScript Libs & Style Sheets end-->
 
 		<!-- fontawesome -->
@@ -350,7 +338,7 @@
 								<div class="card-img-weather">
 									<img
 										style="display: none; width: 120px; height: 110px"
-										src=""
+										src="#"
 										alt="weather icon"
 										class="icon"
 									/>
@@ -366,7 +354,11 @@
 							</div>
 
 							<div id="jsPrices">
-								<img id="photo" src="../media/laTania-book/hotel2.jpg" />
+								<img
+									id="photo"
+									src="../media/laTania-book/hotel2.jpg"
+									alt="hotel picture"
+								/>
 								<div class="book-tablet">
 									<form id="booking" method="POST">
 										<input
