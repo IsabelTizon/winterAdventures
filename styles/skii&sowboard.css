@@ -541,6 +541,9 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	}
 
 	/* Package section start */
+	.second-section-title {
+		margin: 0 auto 25px;
+	}
 	h2.title-second-section {
 		width: 90% !important;
 		margin: 0 auto 20px;
@@ -649,7 +652,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	h2.title-second-section {
 		width: 80%;
 		margin: auto;
-		font-weight: 700;
+		font-weight: 500 !important;
 	}
 	.container.mb-5 {
 		width: 90%;
