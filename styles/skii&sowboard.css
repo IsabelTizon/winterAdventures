@@ -541,10 +541,15 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	}
 
 	/* Package section start */
-	.packages-title {
-		font-size: 40px !important;
+	h2.title-second-section {
+		width: 90% !important;
+		margin: 0 auto 20px;
+		font-weight: 100 !important;
+		font-size: 20px !important;
 	}
 	.handmake-Package {
+		width: 90%;
+		margin: auto;
 		height: auto;
 		padding: 0;
 
@@ -556,7 +561,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	.bg-package-individual,
 	.bg-package-groups,
 	.bg-package-family {
-		width: inherit;
+		width: 90%;
 	}
 
 	.bg-package-individual {
@@ -622,6 +627,9 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	.img-luxury-carousel {
 		height: 300px;
 	}
+	button.bg-white.my-3.p-2.my-btn-luxury-phone {
+		width: 100%;
+	}
 	/* Luxury section end */
 
 	/* holidays section start */
@@ -657,7 +665,10 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	.img-holidays-tall.w-100.h-100 {
 		height: 400px !important;
 	}
-
+	.container.mb-5 {
+		width: 100%;
+		padding: 0;
+	}
 	/* holidays section end */
 
 	/* equipment section start */
@@ -671,38 +682,40 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		padding: 0;
 	}
 	.equipment-text {
-		padding-bottom: 30px;
-		width: 90%;
+		padding-bottom: 20px;
+		width: 95%;
+		margin: 0 auto;
 	}
 	#carousel-web {
 		display: none;
 	}
 	.card-equipment-phone.bg-light {
-		/* height: 450px; */
 		padding-left: 0;
 		padding-right: 0;
+		margin-bottom: 20px;
+		border-radius: 20px;
 	}
 	.phones-cards {
-		width: 100%;
+		width: 73%;
 		margin: auto;
 		display: block;
 		padding: 0;
 	}
-
 	.card-img-top-phone {
 		height: 200px;
 		width: 100%;
-	}
-	.card-body-phone {
-		height: 200px;
-	}
-	.card-title-phone {
-		padding-top: 10px;
+		border-radius: 20px 20px 0 0;
 	}
 	.card-text-phone {
-		width: 100%;
-		padding: 10px 0;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
+	.card-body-phone {
+		padding: 20px;
+	}
+
 	/* equipment section end */
 
 	/* Section: forfaits start */
