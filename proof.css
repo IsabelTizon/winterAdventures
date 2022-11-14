@@ -445,49 +445,5 @@
 		width: 90%;
 	}
 	/* Section: forfaits end */
-
-	/* new section start */
-	.container-packages-top {
-		width: 85%;
-	}
-	.container-table-jsPrices {
-		flex-direction: column;
-		margin-bottom: 50px;
-	}
-	/* table */
-	.table-packages {
-		width: 100%;
-	}
-	.right-prices {
-		width: 100%;
-		margin: 40px auto;
-		padding: 20px;
-	}
-	#jsPrices {
-		display: flex;
-		flex-direction: row;
-		padding-top: 20px;
-	}
-	#booking {
-		display: flex;
-		flex-direction: column;
-	}
-	#photo {
-		width: 50%;
-	}
-	.tablet-form {
-		width: 50%;
-		padding-top: 20px;
-		padding-left: 20px;
-	}
-	/* new section equipment */
-	.container-table-text {
-		width: 100%;
-		margin-right: 0;
-	}
-	.discount-description {
-		margin-top: 24px;
-	}
-	/* new section booking */
 }
 /*! Tablet end */
