@@ -26,6 +26,7 @@ function CalculateCost() {
 
 		let discountedCost = total - discount;
 
+		// modal
 		document.getElementById("modalName").innerHTML = `${name}`;
 
 		document.getElementById(
@@ -34,7 +35,7 @@ function CalculateCost() {
 
 		document.getElementById(
 			"modalroomType"
-		).innerHTML = `${numNights} package £${rate}  per night`;
+		).innerHTML = `${numNights} nights: £${rate}  per night`;
 
 		document.getElementById(
 			"modalDiscount"
