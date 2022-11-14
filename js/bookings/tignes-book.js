@@ -34,7 +34,7 @@ function CalculateCost() {
 		).innerHTML = `${roomType} room booked`;
 
 		document.getElementById(
-			"modalroomType"
+			"modalNumNights"
 		).innerHTML = `${numNights} nights: £${rate}  per night`;
 
 		document.getElementById(
