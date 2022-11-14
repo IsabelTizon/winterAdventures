@@ -53,33 +53,36 @@ function RoomChanged() {
 	switch (roomPicture) {
 		case "Single":
 			console.log("Single Room");
-			document.getElementById("photo").src = "../media/laTania-book/single.jpg";
+			document.getElementById("photo").src =
+				"../media/laTania-book/single1.jpg";
 			rate = 100;
 			break;
 		case "Twin":
 			console.log("Twin");
-			document.getElementById("photo").src = "../media/laTania-book/twin.jpg";
+			document.getElementById("photo").src = "../media/laTania-book/twin1.jpg";
 			rate = 120;
 			break;
 		case "Double":
 			console.log("Double");
-			document.getElementById("photo").src = "../media/laTania-book/double.jpg";
+			document.getElementById("photo").src =
+				"../media/laTania-book/double1.jpg";
 			rate = 140;
 			break;
 		case "Superior":
 			console.log("Superior Double");
 			document.getElementById("photo").src =
-				"../media/laTania-book/superior.jpg";
+				"../media/laTania-book/superior1.jpg";
 			rate = 170;
 			break;
 		case "Triple":
 			console.log("Triple");
-			document.getElementById("photo").src = "../media/laTania-book/triple.jpg";
+			document.getElementById("photo").src =
+				"../media/laTania-book/triple1.jpg";
 			rate = 200;
 			break;
 		default:
 			console.log("None Selected");
-			document.getElementById("photo").src = "../media/laTania-book/hotel.jpg";
+			document.getElementById("photo").src = "../media/laTania-book/hotel1.jpg";
 			rate = 0;
 	}
 }
