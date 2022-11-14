@@ -34,15 +34,15 @@ function CalculateCost() {
 
 		document.getElementById(
 			"modalNumPeople"
-		).innerHTML = `${numPeople} package £${rate}  per night`;
+		).innerHTML = `${numPeople} people, £${rate}  per day`;
 
 		document.getElementById(
 			"modalDiscount"
-		).innerHTML = `Cost of stay £${total} - £${discount} discount!`;
+		).innerHTML = `Cost: £${total} - £${discount} discount!`;
 
 		document.getElementById(
 			"modalTotalCost"
-		).innerHTML = `Total cost is now £${discountedCost}`;
+		).innerHTML = `Total cost: £${discountedCost}`;
 
 		// document.getElementById("details").style.display = "block";
 	}
