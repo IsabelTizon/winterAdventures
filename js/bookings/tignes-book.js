@@ -1,32 +1,38 @@
+//I initialize the variable rate to 0 to add later the different prices with the type of room
 let rate = 0;
 
+// function to calculate the cost
 function CalculateCost() {
+	//3 variables for 3 inputs
 	let name = document.getElementById("customername").value.toUpperCase();
 	let numNights = document.getElementById("nights").value;
 	let roomType = document.getElementById("roomType").value;
 
+	//Cleaning inputs
 	document.getElementById("customername").value = "";
 	document.getElementById("nights").value = "";
 
+	//I initialize the variable discount to 0
 	let discount = 0;
-
+	//if our 3 variables (inputs) are no fill up the DOM (modal) will show us this message
 	if (!name || !numNights || !roomType) {
 		document.getElementById("enterMoreDetails").innerHTML =
 			"YOU MUST ENTER ALL THE DETAILS";
 	} else {
 		let total = numNights * rate;
-
+		//If the number of nights is greater than or equal to 4, a 10% discount will be applied
 		if (numNights >= 4) {
 			console.log("10%");
 			discount = total * 0.1;
 		} else {
+			//if not, no discount will be applied
 			console.log("no discount");
 			discount = 0;
 		}
-
+		// The total with the discount if any
 		let discountedCost = total - discount;
 
-		// modal
+		// modal- DOM
 		document.getElementById("modalName").innerHTML = `${name}`;
 
 		document.getElementById(
@@ -46,6 +52,8 @@ function CalculateCost() {
 		).innerHTML = `Total cost is now £${discountedCost}`;
 	}
 }
+
+// Changing the picture of our room
 function RoomChanged() {
 	let roomPicture = document.getElementById("roomType").value;
 
@@ -56,6 +64,7 @@ function RoomChanged() {
 			console.log("Single Room");
 			document.getElementById("photo").src =
 				"../media/laTania-book/single1.jpg";
+			//
 			rate = 100;
 			break;
 		case "Twin":
@@ -88,6 +97,8 @@ function RoomChanged() {
 	}
 }
 
+// event click the btn book and do the function calculate the cost
 document.getElementById("Book").addEventListener("click", CalculateCost);
 
+//event to change the picture of the room
 document.getElementById("roomType").addEventListener("change", RoomChanged);

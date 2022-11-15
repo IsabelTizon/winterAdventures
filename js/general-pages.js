@@ -1,3 +1,4 @@
+//Events onclick to redirect to another page
 document.getElementById("goToSignUp").onclick = function () {
 	location.href = "../pages/sign-up.html";
 };
