@@ -4,6 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta name="author" content="Isabel Tizon Arranz" />
+		<meta
+			name="description"
+			content="Sign in Page for Winter Adventures Agency"
+		/>
+
 		<title>sign in</title>
 
 		<!-- Bootsrap 4 -->
@@ -37,27 +44,35 @@
 		<div class="container">
 			<div class="d-flex justify-content-center h-100">
 				<div class="card">
+					<!-- Card's header -->
 					<div class="card-header">
 						<div class="row">
 							<div class="col">
+								<!-- Title -->
 								<h3>Sign In</h3>
+								<!-- Link -->
 								<a href="../index.html" class="go-home"
 									><i class="bi bi-arrow-left"></i> Go Home</a
 								>
 							</div>
+							<!-- Canvas Logo -->
 							<div class="col d-flex justify-content-end">
 								<canvas class="canvas"></canvas>
 							</div>
 						</div>
 					</div>
+					<!-- Card's body -->
 					<div class="card-body">
+						<!-- form -->
 						<form>
 							<div class="input-group form-group">
+								<!-- form's icon -->
 								<div class="input-group-prepend">
 									<span class="input-group-text"
 										><i class="fas fa-user"></i
 									></span>
 								</div>
+								<!-- form's input -->
 								<input
 									type="text"
 									id="name"
@@ -66,11 +81,13 @@
 								/>
 							</div>
 							<div class="input-group form-group">
+								<!-- form's icon -->
 								<div class="input-group-prepend">
 									<span class="input-group-text"
 										><i class="fas fa-key"></i
 									></span>
 								</div>
+								<!-- form's input -->
 								<input
 									type="password"
 									id="password"
@@ -78,6 +95,7 @@
 									placeholder="password"
 								/>
 							</div>
+							<!-- form's submit btn -->
 							<div class="form-group">
 								<input
 									type="submit"
@@ -92,6 +110,7 @@
 			</div>
 		</div>
 
+		<!-- custom js -->
 		<script src="../js/sign-in.js"></script>
 		<script src="../js/canvas.js"></script>
 	</body>

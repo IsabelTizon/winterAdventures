@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<meta name="author" content="Isabel Tizon Arranz" />
-		<meta name="description" content="Main Page for Winter Adventures Agency" />
+		<meta name="description" content="Home Page for Winter Adventures Agency" />
 
 		<title>Winter Adventures Home Page</title>
 
@@ -40,6 +40,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container-fluid">
+				<!-- canvas logo -->
 				<canvas class="canvas"></canvas>
 				<button
 					class="navbar-toggler"
@@ -76,6 +77,8 @@
 								>Packages</a
 							>
 						</li>
+
+						<!-- iccon and loggged user name -->
 						<li class="nav-item account-set">
 							<a
 								href="#"
@@ -378,16 +381,20 @@
 				</section>
 			</div>
 		</main>
+
 		<!-- Footer -->
 		<footer class="my-footer bg-dark">
+			<!-- Date/Time API -->
 			<div class="left-footer">
 				<p id="date"></p>
 			</div>
 
+			<!-- Copyright -->
 			<div class="middle-footer">
 				<span>Winter Adventures&copy;2022</span>
 			</div>
 
+			<!-- media icons -->
 			<div class="right-footer">
 				<a href="https://www.instagram.com/"
 					><img
@@ -404,7 +411,7 @@
 			</div>
 		</footer>
 
-		<!-- Bs Bundle with Popper -->
+		<!-- Bs js -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -427,6 +434,7 @@
 			crossorigin="anonymous"
 		></script>
 
+		<!-- custom internal js to redirect to another page -->
 		<script>
 			document.getElementById("goToSignUp").onclick = function () {
 				location.href = "./pages/sign-up.html";
@@ -435,6 +443,8 @@
 				location.href = "./pages/sign-in.html";
 			};
 		</script>
+
+		<!-- custom external js -->
 		<script src="./js/logged.js"></script>
 		<script src="./js/general.js"></script>
 		<script src="./js/canvas.js"></script>
