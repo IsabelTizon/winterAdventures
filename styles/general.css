@@ -31,9 +31,7 @@ body {
 	padding-right: 10%;
 }
 
-/* navbar end */
-
-/*modal sign*/
+/*modal sign */
 .modal-footer {
 	display: flex !important;
 	flex-direction: row !important;
@@ -73,7 +71,8 @@ canvas {
 	margin-left: 5% !important;
 	border-radius: 5px;
 }
-/* Footer start */
+
+/* Footer */
 .my-footer.bg-dark {
 	color: var(--bs-gray-500);
 	line-height: 1.5;
@@ -109,11 +108,9 @@ canvas {
 	align-items: center;
 }
 
-/* Footer end */
-
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
-	/* navbar mobile */
+	/* navbar tablet */
 	.fakeNavbar {
 		height: 90px;
 	}
@@ -146,7 +143,7 @@ canvas {
 		padding: 0 !important;
 	}
 
-	/* footer mobile */
+	/* footer tablet */
 	footer {
 		display: flex;
 		flex-direction: row;
@@ -155,7 +152,6 @@ canvas {
 	.right-footer {
 		padding-top: 15px;
 	}
-	/* Footer start */
 	.my-footer.bg-dark {
 		height: 150px;
 

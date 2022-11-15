@@ -1,6 +1,5 @@
-/* Header start */
+/* Header */
 header {
-	/* background: var(--black-color); */
 	background-attachment: fixed;
 	height: 100vh;
 	width: 100%;
@@ -34,7 +33,7 @@ header {
 	padding: 0;
 }
 
-/* Section checking weather start */
+/* Section checking weather */
 .input-weather {
 	width: 60%;
 	margin: 40px auto 0;
@@ -65,9 +64,7 @@ header {
 	margin-bottom: 0;
 }
 
-/* Section checking weather finish */
-
-/* Section Accommodation (3 cards) start */
+/* Section Accommodation (3 cards) */
 #accommodation {
 	margin: auto;
 	max-width: 75%;
@@ -94,9 +91,8 @@ header {
 	color: #fff;
 	font-size: 20px;
 }
-/* Section Accommodation (3 cards) end */
 
-/* Section Services start */
+/* Section Services */
 #services {
 	margin: auto;
 	max-width: 75%;
@@ -107,9 +103,7 @@ header {
 	clip-path: ellipse(52% 38% at 64% 50%);
 }
 
-/* Section Services end */
-
-/* Section Contact start */
+/* Section Contact  */
 #contact {
 	margin: auto;
 	max-width: 75%;
@@ -125,11 +119,10 @@ header {
 	width: 100%;
 	height: 150px;
 }
-/* Section Contact end */
 
 /* ! Media query tablet start */
 @media only screen and (max-width: 768px) {
-	/* input weather start  */
+	/* input weather tablet  */
 	.input-weather {
 		width: 90%;
 	}
@@ -140,18 +133,16 @@ header {
 		font-size: 20px;
 		padding-left: 20px;
 	}
-	/* input weather finish  */
 
-	/* section services start */
+	/* section services tablet */
 	.myCarouselWinterAdventures {
 		width: 85%;
 	}
 	.ovalEffect {
 		clip-path: ellipse(44% 38% at 51% 47%);
 	}
-	/* section services end */
 
-	/* section accommodation start */
+	/* section accommodation tablet */
 	.card {
 		width: 95%;
 		margin-bottom: 20px;
@@ -165,13 +156,12 @@ header {
 	.card-text {
 		font-size: 14px;
 	}
-	/* section accommodation start */
 }
 /* !Media query tablet end */
 
 /* ! Media query Mobile start */
 @media only screen and (max-width: 414px) {
-	/* header start */
+	/* header mobile */
 	header {
 		height: calc(100vh);
 		background-image: url("../media/video/mobile/mobile-home-page.jpg");
@@ -183,9 +173,8 @@ header {
 	video {
 		display: none;
 	}
-	/* header end */
 
-	/* input weather start  */
+	/* input weather mobile  */
 	.input-weather {
 		width: 90%;
 	}
@@ -195,9 +184,8 @@ header {
 	.input-tx {
 		font-size: 12px;
 	}
-	/* input weather finish  */
 
-	/* Section Accommodation (3 cards) start */
+	/* Section Accommodation (3 cards) mobile */
 	#accommodation {
 		max-width: 90% !important;
 		margin: auto;
@@ -213,11 +201,9 @@ header {
 	.circle-image {
 		height: 450px;
 		width: 100%;
-		/* margin: auto 0; */
 	}
-	/* Section Accommodation (3 cards) end */
 
-	/* Section Services start */
+	/* Section Services mobile */
 	#services {
 		max-width: 80%;
 	}
@@ -237,18 +223,13 @@ header {
 	.ovalEffect {
 		clip-path: ellipse(44% 36% at 50% 46%);
 	}
-
-	/* Section Services end */
-
+	/* Section Contact mobile */
 	.py-5.myContact-Title-Mobile {
 		padding: 50px 0 20px 0 !important;
 	}
-	/* Section Contact start */
 	#contact {
 		margin: auto;
 		max-width: 90%;
 	}
-
-	/* Section Contact end */
 }
 /* !Media query Mobile end */

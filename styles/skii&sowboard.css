@@ -1,9 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-/* header - movie start */
+/* header - movie */
 .header-movie {
 	background-attachment: fixed;
 	height: 100vh;
@@ -24,9 +19,7 @@
 	width: 100vw;
 }
 
-/* header - movie end */
-
-/* Right Package section start */
+/* Right Package section */
 .container-packages-top {
 	display: flex;
 	flex-direction: column;
@@ -216,9 +209,8 @@ select,
 	margin: auto;
 	padding: 40px 0;
 }
-/* Package section end */
 
-/* Luxury section start */
+/* Luxury section */
 .luxury {
 	margin-top: 100px;
 }
@@ -247,9 +239,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 .img-luxury-carousel {
 	height: 434px;
 }
-/* Luxury section end */
 
-/* holidays section start */
+/* holidays section */
 #holidays {
 	width: 80%;
 	margin: auto;
@@ -296,9 +287,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	font-size: 20px;
 	border: #fff 2px solid;
 }
-/* holidays section end */
 
-/* equipment section start */
+/* equipment section */
 #equipment {
 	width: 80%;
 	margin: auto;
@@ -345,9 +335,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	background-position: 50%;
 	background-size: 100% 100%;
 }
-/* equipment section end */
 
-/* Section: forfaits start */
+/* Section: forfaits */
 #forfaits {
 	width: 80%;
 	margin: auto;
@@ -441,11 +430,10 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	font-size: 20px;
 	border: #fff 2px solid;
 }
-/* Section: forfaits end */
 
 /* ! Media query tablet start */
 @media only screen and (max-width: 768px) {
-	/* header - movie start */
+	/* header - movie tablet */
 	header {
 		height: calc(100vh - 80px);
 		background-image: url("../media/video/mobile/mobile-home-page.jpg");
@@ -456,9 +444,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	video {
 		display: none;
 	}
-	/* header - movie end */
 
-	/* new section start */
+	/* new section tablet */
 	.container-packages-top {
 		width: 85%;
 	}
@@ -469,7 +456,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	.strong-line {
 		font-size: 20px;
 	}
-	/* table */
+	/* table tablet */
 	.table-packages {
 		width: 100%;
 	}
@@ -495,7 +482,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		padding-top: 20px;
 		padding-left: 20px;
 	}
-	/* new section equipment */
+	/* new section equipment tablet */
 	.container-table-text {
 		width: 100%;
 		margin-right: 0;
@@ -503,18 +490,17 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	.discount-description {
 		margin-top: 24px;
 	}
-	/* new section booking */
+	/* new section booking tablet */
 
-	/* holidays with winter adventure */
+	/* holidays with winter adventure tablet */
 	#holidays {
 		width: 90%;
 	}
-	/* equipment */
+	/* equipment tablet */
 	.equipment-text {
 		margin-bottom: 40px;
 	}
-	/* 	#forfaits {
- */
+	/* 	#forfaits tablet */
 	#forfaits {
 		width: 90%;
 		margin: auto;
@@ -527,7 +513,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 
 /*! Mobile start */
 @media only screen and (max-width: 414px) {
-	/* header */
+	/* header Mobile */
 	header {
 		height: calc(100vh - 80px);
 		background-image: url("../media/video/mobile/mobile-home-page.jpg");
@@ -540,7 +526,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		display: none;
 	}
 
-	/* Package section start */
+	/* Package section Mobile */
 	.second-section-title {
 		margin: 0 auto 25px;
 	}
@@ -560,7 +546,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		grid-gap: 1em;
 		grid-template-rows: repeat(3, 300px);
 	}
-	/* Pictures Packages */
+	/* Pictures Packages Mobile */
 	.bg-package-individual,
 	.bg-package-groups,
 	.bg-package-family {
@@ -603,9 +589,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		width: 90%;
 		padding: 40px 5px;
 	}
-	/* Package section end */
 
-	/* Luxury section start */
+	/* Luxury section Mobile */
 	.bg-luxury {
 		width: 100%;
 		background-color: #0dcaf0;
@@ -633,9 +618,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	button.bg-white.my-3.p-2.my-btn-luxury-phone {
 		width: 100%;
 	}
-	/* Luxury section end */
 
-	/* holidays section start */
+	/* holidays section Mobile */
 	section#holidays {
 		width: 90% !important;
 	}
@@ -672,9 +656,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		width: 100%;
 		padding: 0;
 	}
-	/* holidays section end */
 
-	/* equipment section start */
+	/* equipment section Mobile */
 	#equipment {
 		width: 100%;
 		padding: 0;
@@ -719,9 +702,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		padding: 20px;
 	}
 
-	/* equipment section end */
-
-	/* Section: forfaits start */
+	/* Section: forfaits Mobile */
 	.forfaits-info {
 		width: 100%;
 	}
@@ -760,8 +741,8 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		width: 100%;
 		height: 300px;
 	}
-	/* Section: forfaits end */
-	/* new section start */
+
+	/* new section Mobile */
 	.container-packages-top {
 		width: 90%;
 	}
@@ -769,7 +750,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		flex-direction: column;
 		margin-bottom: 50px;
 	}
-	/* new section equipment */
+	/* new section equipment Mobile */
 	.container-table-text {
 		width: 100%;
 		margin-right: 0;
@@ -777,7 +758,7 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 	.discount-description {
 		margin-top: 24px;
 	}
-	/* new section booking */
+	/* new section booking Mobile */
 	.right-prices {
 		width: 100%;
 		margin-left: 0;
@@ -797,11 +778,10 @@ button.bg-white.my-3.p-2.my-btn-luxury-phone:hover {
 		padding-top: 20px;
 		padding-left: 0;
 	}
-	/* Footer start */
+	/* Footer Mobile */
 	.ski-footer {
 		margin-top: 300px;
 	}
-	/* Footer end */
 
 	/*! Mobile end */
 }

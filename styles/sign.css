@@ -48,12 +48,14 @@ body {
 	color: black;
 	background-color: white;
 }
+/* logo */
 canvas {
 	margin-left: 50% !important;
 }
 
 /* !Media Quey tablet starts */
 @media screen and (max-width: 768px) {
+	/* card */
 	.card {
 		height: 390px;
 		width: 500px;
@@ -68,6 +70,7 @@ canvas {
 
 /* !Media Quey phone starts */
 @media screen and (max-width: 414px) {
+	/* card */
 	.card {
 		height: 470px;
 		width: 500px;

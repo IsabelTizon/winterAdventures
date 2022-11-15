@@ -1,8 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-/* carousel start */
+/* carousel */
 .myCarouselWinterAdventures {
 	height: 500px;
 	width: 50%;
@@ -14,16 +10,14 @@
 	height: 400px;
 	margin-top: 30px;
 }
-/* carousel end */
 
-/* section accomodation start */
+/* section accomodation */
 .ovalEffectAccommodation {
 	height: 450px;
 	width: 100%;
 	margin: auto 0;
 	clip-path: ellipse(49% 37% at 50% 50%);
 }
-/* section accomodation end */
 
 /*!new section start */
 .new-section {
@@ -169,39 +163,15 @@ select,
 	border-radius: 20px;
 }
 /*!new section finish */
+
 /* ! Media query tablet start */
 @media only screen and (max-width: 768px) {
-	/* carousel start */
+	/* carousel tablet */
 	.myCarouselWinterAdventures {
 		width: 85%;
 	}
-	/* carousel end */
-	.go-packages {
-		display: flex;
-		flex-direction: row;
-		margin-top: 30px;
-	}
-	.adv-equipment {
-		display: flex;
-		flex-direction: column;
-		margin-left: 40px;
-	}
-	.text-adv-equipment {
-		color: #008ed6;
-	}
-	.link-go-packages {
-		color: #000000;
-		text-decoration: none;
-	}
-	.link-go-packages:hover {
-		color: #008ed6;
-	}
-	.photo-adv-equipment {
-		border-radius: 10px;
-	}
 
-	/* new section start */
-	/* new section weather */
+	/* new section weather tablet */
 	.new-section {
 		width: 85%;
 		flex-direction: column;
@@ -235,7 +205,7 @@ select,
 		width: 200px;
 		height: 150px;
 	}
-	/* new section booking */
+	/* new section booking tablet */
 	.text-accomodation {
 		width: 75%;
 		margin: auto;
@@ -263,7 +233,7 @@ select,
 	#photo {
 		width: 50%;
 	}
-	/* new section map */
+	/* new section map tablet */
 	.right-section {
 		width: 100%;
 		margin-left: 0;
@@ -285,28 +255,40 @@ select,
 	canvas {
 		margin-left: 0;
 	}
-	/* new section equipment advertisement  */
+	/* new section equipment advertisement go packages tablet */
 	.go-packages {
+		display: flex;
 		flex-direction: row;
 		margin-top: 50px;
 	}
 	.adv-equipment {
+		display: flex;
+		flex-direction: column;
+		margin-left: 40px;
 		width: 80%;
 		margin: 0 auto 30px;
 	}
 	.text-adv-equipment {
+		color: #008ed6;
 		font-size: 25px;
 	}
-
 	.link-go-packages {
+		color: #000000;
+		text-decoration: none;
 		font-size: 20px;
 	}
-	/* new section end */
-	/* !Media query tablet end */
+	.link-go-packages:hover {
+		color: #008ed6;
+	}
+	.photo-adv-equipment {
+		border-radius: 10px;
+	}
 }
+/* !Media query tablet end */
+
 /* !Media query Mobile start */
 @media only screen and (max-width: 414px) {
-	/* carousel start */
+	/* carousel Mobile */
 	.myCarouselWinterAdventures {
 		height: 350px;
 		margin: 0;
@@ -320,22 +302,19 @@ select,
 	.carousel-inner {
 		height: 250px;
 	}
-	/* Carousel end*/
 
-	/* section services start */
+	/* section services Mobile */
 	.section-services.mt-5 {
 		margin-top: 0;
 	}
-	/* section services end*/
 
-	/* section accomodation start */
+	/* section accomodation Mobile */
 	#services {
 		max-width: 90%;
 	}
-	/* section accomodation end */
 
-	/* new section start */
-	/* new section weather */
+	/* new section Mobile */
+	/* new section weather Mobile */
 	.new-section {
 		width: 85%;
 		flex-direction: column;
@@ -374,7 +353,7 @@ select,
 		width: 150px;
 		height: 120px;
 	}
-	/* new section booking */
+	/* new section booking Mobile */
 	.text-accomodation {
 		width: 280px;
 		font-size: 30px;
@@ -398,7 +377,7 @@ select,
 		padding-left: 10px;
 		font-size: 20px;
 	}
-	/* new section map */
+	/* new section map Mobile */
 	.right-section {
 		width: 100%;
 		margin-left: 0;
@@ -417,7 +396,7 @@ select,
 	.map-tx {
 		font-size: 20px;
 	}
-	/* new section equipment advertisement  */
+	/* new section equipment advertisement  Mobile */
 	.go-packages {
 		flex-direction: column;
 		margin-top: 50px;
@@ -436,7 +415,5 @@ select,
 		width: 100%;
 		height: 250px;
 	}
-
-	/* new section end */
 }
-/* Media query Mobile end */
+/* ! Media query Mobile end */
